@@ -175,9 +175,15 @@ Plus 6 combination patterns for using 2-3 models together.
 
 ## Updating
 
+**Note**: `npx skills update` cannot resolve `Gao-thinking-skill` back to the GitHub source. Use the reliable reinstall method instead:
+
+```bash
+npx skills remove Gao-thinking-skill -g -y && npx skills add infinite-gaming-studio/Gao-thinking-skill -g
+```
+
 | Method | Command |
 |--------|---------|
-| **npx (any runtime)** | `npx skills update Gao-thinking-skill` |
+| **npx (recommended)** | `npx skills remove Gao-thinking-skill -g -y && npx skills add infinite-gaming-studio/Gao-thinking-skill -g` |
 | **Manual (git clone)** | `cd Gao-thinking-skill && git pull` |
 
 After updating, restart your AI assistant to load the latest SKILL.md.
