@@ -118,6 +118,12 @@ Let the user choose — do not default to any option. Write nothing to disk with
 
 **散文感的核心**：读者能感觉到有一个"人"在说话。这个人有自己的节奏、有自己的呼吸、知道什么时候该停下来让你想一想。不是信息密度最大化，而是情感和意象的逐步展开。
 
+**双模式写作系统**：同一份感悟有两种输出形态——
+- **散文模式**（默认对话输出）：亲密、随意、像深夜交谈，无标题无引用，§ 分隔段落
+- **书卷气风格**（Markdown/HTML 导出）：有密度、有厚度、像清晨写信，每段有小标题，自然地引经据典
+
+二者是同一颗心在不同场合的跳动。对话中写的是「心」，导出的是「文」。
+
 ### AI感 vs 散文感 对照表
 
 与其抽象说"不要有AI感"，不如直接对比。以下每一行都是一次改写练习：
@@ -235,12 +241,14 @@ AI 写作最大的特征不是词句不好，是**没有温度**。一篇有温�
 
 如果用户在 Step 4 中选择导出，提供以下选项：
 
-| 格式 | 动作 | 模板 |
-|------|------|------|
-| Markdown | 写入 `gaothinking_output/YYYY-MM-DD_{keyword}/reflection.md` | `output-templates/essay.md` |
-| HTML | 生成独立阅读页面 `index.html` | `output-templates/index.html` |
-| 社交分享 | 生成带引子的短版 + 3-5 个标签 `social.txt` | `output-templates/social.md` |
-| 自定义 | 按用户描述生成 | — |
+| 格式 | 动作 | 写作风格 | 模板 |
+|------|------|---------|------|
+| Markdown | 写入 `gaothinking_output/YYYY-MM-DD_{keyword}/reflection.md` | **书卷气散文**——小标题 + 引经据典 | `output-templates/markdown.md` |
+| HTML | 生成独立阅读页面 `index.html` | 同书卷气风格 | `output-templates/index.html` |
+| 社交分享 | 生成带引子的短版 + 3-5 个标签 `social.txt` | 精简版书卷气风格 | `output-templates/social.md` |
+| 自定义 | 按用户描述生成 | — | — |
+
+**Markdown 不是直接搬运对话内容，而是用"书卷气散文风格"重新书写。** 同一份感悟，散文模式用口语倾诉，书卷气风格用经典加持。对话中写的散文是「心」，导出的 markdown 是「文」——心文可以不同。
 
 **输出路径**：所有文件写入用户项目根目录下的 `gaothinking_output/YYYY-MM-DD_{keyword}/`。写完后告知用户确切路径。
 

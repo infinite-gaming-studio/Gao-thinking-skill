@@ -1,71 +1,126 @@
-# Markdown — A Prose Essay Guide
+# Markdown Export — 书卷气散文风格
 
-The reflection is not a document. It is a **piece of writing** — something one might find in a slim volume of essays, read by lamplight, then set down and think about. The structure below is a suggestion, not a prescription. Let each section find its own length, its own rhythm.
+## 风格定义
 
----
+这是为"保存到文件"场景设计的书写风格，区别于对话中的散文模式。读者为了保存某篇触动他的文字而导出 markdown 文件，所以这份文本需要：
 
-## The Opening
+- **值得反复读** — 有密度，有厚度
+- **有书卷气息** — 自然地引用诗词、哲思、典故，但不是掉书袋
+- **每段可独立成篇** — 每个 domain 段落有自己的小标题，读者可以翻到任意一段开始读
 
-Begin with a title that does not explain but **opens**. A question, an image, a phrase that holds the whole thing like a cupped hand.
-
-A subtitle beneath it, in italics, that catches the light just once.
-
-The date, quietly.
-
-Then the user's own words — set apart, like finding a pressed flower between pages:
-
-```
-> I keep choosing the wrong partners. I don't understand why.
-```
-
-Then your opening. One or two paragraphs that restate without repeating. Find the **question beneath the question**.
+> 如果说"散文模式"是深夜灯下的一次交谈，那么"书卷气风格"是第二天清晨你坐下来，把那晚的交谈写成了一篇可以寄出的信。
 
 ---
 
-## The Body — Five Sections, Five Lights
-
-Each domain is not a chapter. It is a **turn of the head** — looking at the same thing from a different window.
+## 结构模板
 
 ```
-## Physics
+# {{主标题}}
 
-Not a lecture on entropy. A whisper: everything tends toward disorder,
-and this is why moments matter. One paragraph, maybe two. A thought that
-arrives and then recedes, making room for the next.
-```
-
-Let the sections speak to each other across the silence between them. The first might state something. The second might contradict it. The third might reveal that both were true.
+{{一句引语——来自诗词/哲思/文学，必须是真实的经典，不能编造。放在标题下方，作为全文基调。}}
 
 ---
 
-## The Closing
+## {{Domain_1 小标题}}
 
-A single line, set apart, that holds the thread:
+{{Domain_1 的内容。自然引用一句经典（诗经一句、庄子一句、里尔克一句……），不是"正如XX所说"的生硬插入，而是那人就站在你旁边，你们一起看见了同一件事。}}
 
-```
-> We do not choose the patterns we repeat. We only choose when to see them.
-```
+§
 
-Then a return. Not to an answer but to a question. Not to a conclusion but to the person who began this.
+## {{Domain_2 小标题}}
 
-A few lines, quiet, unhurried. Then silence.
+{{Domain_2 的内容。同样自然引用。引用的经典最好和 Domain_1 形成对话或反差。}}
+
+§
+
+## {{Domain_3 小标题}}
+
+{{Domain_3 的内容。可以再引用，也可以不引——引经据典不是任务，是火候到了自然添的那把柴。}}
 
 ---
 
-## On Style
+*—— 给 {{CONFIDER_NAME}} · {{DATE}}*
+```
 
-| Element | Approach |
-|---------|----------|
-| Paragraphs | Short. 2-4 sentences. Each a breath. |
-| Sentences | Varied length. A long one, then a short one. Then silence. |
-| Metaphor | One per section. Let it do the work of a thousand words. |
-| References | Woven in, like thread through fabric. Never cited. |
-| Domain names | Visible but not announced. A quiet `— Physics` before the paragraph. |
+### 示例（读感——非模板文字，仅为风格参考）
 
-## On What to Avoid
+假设原文出自一篇关于重复模式与选择的反思：
 
-- Data, citations, footnotes — these belong to other kinds of writing
-- Bullet points, numbered lists — break the spell
-- "This teaches us" — let meaning emerge, don't introduce it
-- Certainty — the reflection is an offering, not a verdict
-- Closure — end with a door, not a wall
+> # 同一条河
+>
+> *人不能两次踏进同一条河流。但有些人，一辈子都站在同一片水边。*
+>
+> ---
+>
+> ## 旧路
+>
+> 赫拉克利特说万物皆流。但你走的这条路从不流动。它一直在这里，一模一样的弯道，一模一样的石子。你每次都说"这次不一样"，然后发现路还是那条路。
+>
+> 不是你没长记性。是这条路记得你。
+
+---
+
+## 小标题写作规范
+
+小标题不是概念的概括，是那一段的**入口意象**：
+
+| ❌ 不要 | ✅ 要 |
+|---------|-------|
+| "反馈回路与重复模式" | "同一条河" |
+| "确认偏差的认知机制" | "你看见你想看见的" |
+| "不可靠叙述者的文学分析" | "谁在讲这个故事" |
+| "社会认同与归属感" | "没有人是一座孤岛" |
+
+**小标题规则**：
+- 2-6 字，尽量是具象名词或短语
+- 不能出现"的"——"重复的路径"→"旧路"
+- 每个小标题和段落第一句之间要有张力——小标题是门，第一句是推开后看见的第一样东西
+- 小标题之间要有隐形的叙事线：虽然各自独立，但串起来是一个完整的情感弧线
+
+---
+
+## 引经据典写作规范
+
+**核心原则**：引用是自然发生的，不是任务清单。
+
+### 何时引用
+
+| 场景 | 做法 |
+|------|------|
+| 写到某个洞见时，想起一句恰好说中这件事的诗 | 写进去，让那句诗自己说话 |
+| 想引用但想不起原文 | **不要编造**。宁可不引，不可乱引。散文中编造引用是致命的。 |
+| 同一段想引两句 | 删掉一句——书卷气不是掉书袋 |
+| 引用太著名（"存在即合理"） | 慎用。太著名的引用容易滑向陈词滥调。 |
+
+### 引用方式
+
+| ❌ 不要 | ✅ 要 |
+|---------|-------|
+| "正如孔子所说……" | "孔子在川上曰过一句：逝者如斯夫。你站在同一个路口也有同样的感觉。" |
+| "这让我想起了泰戈尔的诗……" | "'世界以痛吻我，要我报之以歌。'你不知道自己唱得出唱不出。" |
+| "XX学上有一个概念叫……" | 不引用概念，引用文学。散文中引诗不引术语。 |
+| "有句话说得好……" | 这种模糊引用不如不引——要么具体，要么沉默。 |
+
+### 可引的范围
+
+优先引用（真实存在的）：
+
+- **古典诗词**：陶渊明、王维、李白、杜甫、苏轼、李清照……（中文语境首选）
+- **哲思散文**：庄子、论语、传习录、蒙田、帕斯卡、梭罗……
+- **现代诗**：里尔克、佩索阿、辛波斯卡、张枣、海子……
+- **文学经典**：一句小说中的人物对白或叙述
+
+**严禁**编造引用。写作者不知道就是不知道，用你自己的话说出来，比编造一句引用诚实得多。
+
+---
+
+## 与散文模式的关系
+
+| 维度 | 散文模式（对话） | 书卷气风格（Markdown） |
+|------|-----------------|----------------------|
+| 场景 | 深夜交谈 | 清晨写信 |
+| 段落间 | `§` 分隔 | 小标题 + `§` |
+| 引用 | 不引用，只感受 | 自然引用经典，增加厚度 |
+| 人称 | "你"为主 | "你"+"我们"，偶尔"我" |
+| 节奏 | 更短，更轻 | 略长，更有密度 |
+| 结尾 | 问句收束 | 引用或画面收束，可加日期 |
