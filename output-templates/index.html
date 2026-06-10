@@ -7,21 +7,87 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  html {
+    background: #f0ebe3;
+  }
+
   body {
+    position: relative;
+    z-index: 0;
     font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "Georgia", "EB Garamond", "Times New Roman", serif;
     max-width: 640px;
-    margin: 0 auto;
-    padding: 4rem 2.5rem;
+    margin: 2rem auto;
+    padding: 5rem 3rem 4rem;
     line-height: 2.2;
     color: #2c2416;
     background: #f8f5f0;
     background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(200,190,176,0.08) 1px, rgba(200,190,176,0.08) 2px);
+      repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(200,190,176,0.06) 1px, rgba(200,190,176,0.06) 2px);
     font-weight: 300;
     font-size: 1.05rem;
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    box-shadow: 0 0 60px rgba(0,0,0,0.04), 0 0 120px rgba(0,0,0,0.02);
+    min-height: calc(100vh - 4rem);
+  }
+
+  /* === Watermark System — huge, faint, literary symbols === */
+  .watermark {
+    position: fixed;
+    pointer-events: none;
+    z-index: -1;
+    line-height: 1;
+    user-select: none;
+    font-weight: 300;
+  }
+
+  .watermark--heart {
+    font-size: min(85vw, 65rem);
+    color: #c8bfb0;
+    opacity: 0.04;
+    top: -6%;
+    right: -18%;
+    transform: rotate(14deg);
+    font-family: "Georgia", "Times New Roman", serif;
+  }
+
+  .watermark--thought {
+    font-size: min(22vw, 16rem);
+    color: #ddd6c8;
+    opacity: 0.035;
+    bottom: -4%;
+    left: -5%;
+    font-family: "Noto Serif SC", "Source Han Serif SC", serif;
+    transform: rotate(-3deg);
+  }
+
+  .watermark--dot {
+    font-size: 0.3rem;
+    color: #c8bfb0;
+    opacity: 0.12;
+    top: 15%;
+    right: 8%;
+    letter-spacing: 2em;
+    writing-mode: vertical-rl;
+    font-family: -apple-system, sans-serif;
+  }
+
+  .watermark--dot-left {
+    font-size: 0.3rem;
+    color: #c8bfb0;
+    opacity: 0.1;
+    bottom: 20%;
+    left: 5%;
+    letter-spacing: 1.5em;
+    writing-mode: vertical-rl;
+    font-family: -apple-system, sans-serif;
+  }
+
+  /* === Content layer — above watermarks === */
+  .content {
+    position: relative;
+    z-index: 1;
   }
 
   /* === Title Block — thin, centered, breathing === */
@@ -30,17 +96,26 @@
     margin-bottom: 3rem;
   }
 
+  .title-ornament {
+    color: #d5cdbf;
+    font-size: 0.55rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.3em;
+    font-weight: 300;
+    display: block;
+  }
+
   .title-rule {
-    width: 1.5rem;
+    width: 1.2rem;
     height: 1px;
     background: #c8bfb0;
     margin: 0 auto 1.2rem;
   }
 
   h1 {
-    font-weight: 300;
+    font-weight: 250;
     font-size: 1.5rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     color: #1a150e;
     line-height: 1.5;
     margin-bottom: 0.15rem;
@@ -48,41 +123,71 @@
 
   .meta {
     color: #a89f8e;
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
   }
 
-  /* === Separator — a thin breath === */
+  /* === Separator — ornamented breath === */
   .separator {
     text-align: center;
     margin: 2.5rem 0;
     color: #d5cdbf;
-    font-size: 0.7rem;
-    letter-spacing: 1.2em;
+    font-size: 0.55rem;
+    letter-spacing: 1em;
     user-select: none;
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
   }
 
-  /* === Section Headings — quiet, almost whispered === */
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0d9cd;
+    max-width: 3rem;
+  }
+
+  .separator .orn {
+    color: #d0c8b8;
+    font-size: 0.45rem;
+    letter-spacing: 0;
+    display: inline-block;
+  }
+
+  /* === Section Headings — quiet, ornamental === */
   h2 {
-    font-weight: 350;
-    font-size: 1.1rem;
-    margin-top: 3rem;
+    font-weight: 320;
+    font-size: 1.05rem;
+    margin-top: 3.5rem;
     margin-bottom: 0.5rem;
     color: #3a3024;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     line-height: 1.5;
+    position: relative;
+  }
+
+  h2 .orn {
+    color: #d0c8b8;
+    font-size: 0.45rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    font-weight: 300;
+    vertical-align: middle;
   }
 
   h2::before {
     content: "";
     display: block;
-    width: 1rem;
+    width: 0.8rem;
     height: 1px;
-    background: #ddd6c8;
+    background: #e0d9cd;
     margin-bottom: 0.7rem;
   }
 
@@ -99,88 +204,117 @@
     margin-top: 1.5rem;
   }
   .drop-cap::first-letter {
-    font-size: 3em;
+    font-size: 3.2em;
     float: left;
-    line-height: 0.8;
+    line-height: 0.75;
     margin-right: 0.35rem;
     margin-top: 0.08rem;
     color: #3a3024;
-    font-weight: 400;
+    font-weight: 380;
     font-family: "Noto Serif SC", "Georgia", serif;
     letter-spacing: -0.02em;
   }
 
-  /* === Blockquote — the user's voice, set apart with stillness === */
+  /* === Inline ornament (for section ends) === */
+  .end-ornament {
+    text-align: center;
+    color: #d5cdbf;
+    font-size: 0.5rem;
+    margin: 2rem 0 1rem;
+    letter-spacing: 0.5em;
+    font-weight: 300;
+  }
+
+  /* === Blockquote — set apart with decorative corner brackets === */
   blockquote {
-    margin: 2rem 0;
-    padding: 0.6rem 1.8rem;
+    margin: 2.5rem 0;
+    padding: 0.8rem 2rem;
     color: #5a4f40;
     font-style: italic;
-    font-weight: 350;
+    font-weight: 330;
     position: relative;
+    border-left: 1px solid #e0d9cd;
+    border-right: 1px solid #e0d9cd;
   }
 
   blockquote::before {
     content: "\201C";
     position: absolute;
-    left: 0;
-    top: -0.2rem;
-    font-size: 2.5rem;
+    left: 0.3rem;
+    top: -0.3rem;
+    font-size: 2.2rem;
     color: #d5cdbf;
     font-family: "Georgia", serif;
     line-height: 1;
+    font-weight: 300;
   }
 
   blockquote::after {
     content: "\201D";
     position: absolute;
-    right: 0;
-    bottom: -0.8rem;
-    font-size: 2.5rem;
+    right: 0.3rem;
+    bottom: -0.6rem;
+    font-size: 2.2rem;
     color: #d5cdbf;
     font-family: "Georgia", serif;
     line-height: 1;
+    font-weight: 300;
   }
 
   blockquote p { margin: 0; }
 
-  /* === Pull Quote — the heart of the reflection, floating === */
+  /* === Pull Quote — floating, framed by ornaments === */
   .pull-quote {
-    font-size: 1.02rem;
+    font-size: 1rem;
     color: #4a3f32;
     text-align: center;
-    margin: 2.5rem 0;
-    padding: 0.8rem 1.5rem;
-    line-height: 2;
-    font-weight: 320;
+    margin: 3rem 0;
+    padding: 1.5rem 2rem;
+    line-height: 2.1;
+    font-weight: 300;
     font-style: italic;
     position: relative;
   }
 
   .pull-quote::before {
-    content: "\201C";
-    font-size: 2.8rem;
+    content: "\2766";
+    font-size: 0.6rem;
     color: #d5cdbf;
-    font-family: "Georgia", serif;
     position: absolute;
     left: 50%;
-    top: -0.6rem;
+    top: 0;
     transform: translateX(-50%);
-    line-height: 1;
     font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
   }
+
+  .pull-quote::after {
+    content: "\2766";
+    font-size: 0.6rem;
+    color: #d5cdbf;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleY(-1);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .pull-quote p { margin: 0; }
 
   /* === Domain Tag — contextual marker, not label === */
   .domain-marker {
     color: #a89f8e;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-weight: 400;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     font-style: normal;
     display: block;
-    margin-top: 0.2rem;
-    margin-bottom: 0.1rem;
+    margin-top: 0.15rem;
+    margin-bottom: 0.05rem;
     text-transform: uppercase;
   }
 
@@ -188,30 +322,64 @@
     content: "\2014 ";
   }
 
+  /* === Decorative Page Rule (for manual use between sections) === */
+  .section-rule {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e0d9cd 30%, #e0d9cd 70%, transparent);
+    margin: 3rem auto;
+    width: 60%;
+    position: relative;
+  }
+
+  .section-rule::after {
+    content: "\2766";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #d0c8b8;
+    font-size: 0.4rem;
+    background: #f8f5f0;
+    padding: 0 0.8rem;
+    line-height: 1;
+    font-weight: 300;
+  }
+
   /* === Footer === */
   footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    font-size: 0.72rem;
+    margin-top: 4.5rem;
+    padding-top: 1.8rem;
+    font-size: 0.7rem;
     color: #c8bfb0;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     border-top: none;
     position: relative;
   }
 
   footer::before {
-    content: "";
+    content: "\2766";
     display: block;
-    width: 1.5rem;
-    height: 1px;
-    background: #ddd6c8;
-    margin: 0 auto 1.2rem;
+    font-size: 0.5rem;
+    color: #d0c8b8;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-family: "Georgia", serif;
   }
 
-  /* === Thin Rule (for use between sections if needed) === */
+  footer::after {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 1px;
+    background: #e0d9cd;
+    margin: 1rem auto 0;
+  }
+
+  /* === Thin Rule (minimal, no ornament) === */
   .thin-rule {
     border: none;
     height: 1px;
@@ -220,27 +388,47 @@
   }
 
   /* === Responsive === */
-  @media (max-width: 600px) {
-    body { padding: 2rem 1.5rem; line-height: 2; font-size: 0.95rem; }
-    h1 { font-size: 1.3rem; }
-    h2 { font-size: 1.05rem; }
-    .drop-cap::first-letter { font-size: 2.4em; }
-    blockquote { padding: 0.4rem 1.2rem; }
-    blockquote::before { font-size: 1.8rem; }
-    blockquote::after { font-size: 1.8rem; }
-    .pull-quote { padding: 0.8rem 0.5rem; font-size: 0.98rem; }
+  @media (max-width: 680px) {
+    body { margin: 0; padding: 2.5rem 1.5rem; line-height: 2; font-size: 0.95rem; min-height: auto; box-shadow: none; }
+    h1 { font-size: 1.3rem; letter-spacing: 0.06em; }
+    h2 { font-size: 1rem; margin-top: 2.5rem; }
+    .drop-cap::first-letter { font-size: 2.6em; }
+    blockquote { padding: 0.6rem 1.2rem; border-left-width: 1px; border-right-width: 1px; }
+    blockquote::before { font-size: 1.6rem; left: 0.2rem; }
+    blockquote::after { font-size: 1.6rem; right: 0.2rem; }
+    .pull-quote { padding: 1.2rem 0.8rem; font-size: 0.95rem; margin: 2rem 0; }
+    .watermark--heart { font-size: min(120vw, 40rem); top: -3%; right: -25%; }
+    .watermark--thought { font-size: min(30vw, 12rem); }
+    .watermark--dot { display: none; }
+    .watermark--dot-left { display: none; }
+    .section-rule { width: 80%; }
+  }
+
+  @media (max-width: 400px) {
+    body { padding: 1.5rem 1rem; font-size: 0.9rem; }
+    .watermark--heart { opacity: 0.025; }
   }
 
   /* === Print === */
   @media print {
-    body { background: white; color: black; max-width: none; padding: 1in; }
+    body { background: white; color: black; max-width: none; padding: 1in; margin: 0; box-shadow: none; min-height: auto; }
+    .watermark { display: none; }
     footer { display: none; }
+    .section-rule::after { background: white; }
   }
 </style>
 </head>
 <body>
 
+<div class="watermark watermark--heart" aria-hidden="true">❦</div>
+<div class="watermark watermark--thought" aria-hidden="true">思</div>
+<div class="watermark watermark--dot" aria-hidden="true">· · · · · ·</div>
+<div class="watermark watermark--dot-left" aria-hidden="true">· · · · ·</div>
+
+<div class="content">
+
 <div class="title-block">
+  <span class="title-ornament">❦</span>
   <div class="title-rule"></div>
   <h1>{{TITLE}}</h1>
   <p class="meta">{{DATE}}</p>
@@ -252,7 +440,7 @@
 </blockquote>
 {{/HAS_BLOCKQUOTE}}
 
-<div class="separator">· · ·</div>
+<div class="separator"><span class="orn">❦</span></div>
 
 {{#DROP_CAP_FIRST}}
 <div class="drop-cap">
@@ -264,7 +452,11 @@
 </div>
 {{/DROP_CAP_FIRST}}
 
+<div class="end-ornament">❦</div>
+
 <footer>高 思</footer>
+
+</div>
 
 </body>
 </html>
