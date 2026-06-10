@@ -19,7 +19,11 @@ A significance-finder skill. When someone shares a personal experience, select r
 
 **Do not use for:** factual questions, technical debugging, code review, or external advice-seeking.
 
-**Update note**: `npx skills update Gao-thinking-skill` cannot resolve the name back to its GitHub source. To update, use `npx skills remove Gao-thinking-skill -g -y && npx skills add infinite-gaming-studio/Gao-thinking-skill -g`.
+**Update**: `npx skills update` cannot resolve this skill back to its GitHub source. To update, run:
+```bash
+curl -fsSL https://raw.githubusercontent.com/infinite-gaming-studio/Gao-thinking-skill/main/scripts/update.sh | bash
+```
+Or the one-liner: `npx skills remove Gao-thinking-skill -g -y && npx skills add infinite-gaming-studio/Gao-thinking-skill -g`.
 
 ## How to Use
 

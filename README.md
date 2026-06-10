@@ -89,6 +89,8 @@ Gao-thinking-skill/
 │   ├── 08-technology-frontier.md
 │   ├── 09-mythology-religion.md
 │   └── 10-future-interdisciplinary.md
+├── scripts/              # Utility scripts
+│   └── update.sh         # Update script (curl-pipe compatible)
 ├── output-templates/     # Output format templates
 │   ├── essay.md          # 散文模式 — flowing prose with § separators
 │   ├── markdown.md       # Standard markdown output
@@ -175,18 +177,36 @@ Plus 6 combination patterns for using 2-3 models together.
 
 ## Updating
 
-**Note**: `npx skills update` cannot resolve `Gao-thinking-skill` back to the GitHub source. Use the reliable reinstall method instead:
+**Note**: `npx skills update` cannot resolve `Gao-thinking-skill` back to the GitHub source. Use one of the reliable methods below.
+
+### Method 1: curl pipe (recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/infinite-gaming-studio/Gao-thinking-skill/main/scripts/update.sh | bash
+```
+
+This downloads the update script, runs it in `/tmp/`, and cleans up. No files remain after completion.
+
+### Method 2: one-liner
 
 ```bash
 npx skills remove Gao-thinking-skill -g -y && npx skills add infinite-gaming-studio/Gao-thinking-skill -g
 ```
 
-| Method | Command |
-|--------|---------|
-| **npx (recommended)** | `npx skills remove Gao-thinking-skill -g -y && npx skills add infinite-gaming-studio/Gao-thinking-skill -g` |
-| **Manual (git clone)** | `cd Gao-thinking-skill && git pull` |
+### Method 3: git pull (if cloned manually)
+
+```bash
+cd Gao-thinking-skill && git pull
+```
 
 After updating, restart your AI assistant to load the latest SKILL.md.
+
+## Troubleshooting
+
+If the update fails:
+- Check your internet connection
+- Try Method 2 (one-liner) directly
+- If uninstalled but not reinstalled, run: `npx skills add infinite-gaming-studio/Gao-thinking-skill -g`
 
 ## Uninstalling
 
