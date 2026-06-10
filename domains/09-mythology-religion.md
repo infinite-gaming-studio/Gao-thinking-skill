@@ -1,4 +1,7 @@
-# Mythology & Ritual
+---
+name: domain-mythology-religion
+description: Reference for Comparative Mythology, Religious Studies, Semiotics. Significance dimension: sacred experience, archetypes, meaning construction.
+---
 
 *This domain reveals: the meaning of sacred experience, archetypal patterns, the construction of meaning, and the deep unity of human stories across time and culture.*
 

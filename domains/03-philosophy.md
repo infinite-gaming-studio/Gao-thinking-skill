@@ -1,4 +1,7 @@
-# Philosophy
+---
+name: domain-philosophy
+description: Reference for Analytic Philosophy, Continental Philosophy, Ethics, Epistemology, Logic, Philosophy of Mind. Significance dimension: freedom, truth, right/wrong, consciousness.
+---
 
 *This domain reveals: the meaning of freedom, truth, right and wrong, consciousness, and the limits of what can be known.*
 

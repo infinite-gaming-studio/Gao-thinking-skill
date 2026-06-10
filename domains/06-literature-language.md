@@ -1,4 +1,7 @@
-# Literature & Language
+---
+name: domain-literature-language
+description: Reference for World Literature, Poetics, Narratology, Linguistics, Rhetoric. Significance dimension: story, alienation, metaphor, limits of language.
+---
 
 *This domain reveals: the meaning of story, alienation, metaphor, the limits and powers of language, and the narrative structure of human experience.*
 

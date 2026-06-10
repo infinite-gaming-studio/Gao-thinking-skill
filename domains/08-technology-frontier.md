@@ -1,4 +1,7 @@
-# Technology & Frontiers
+---
+name: domain-technology-frontier
+description: Reference for AI, Network Science, Game Theory, Systems Theory, Cybernetics. Significance dimension: cooperation, leverage, consciousness, connection.
+---
 
 *This domain reveals: the meaning of consciousness, cooperation, connection, leverage, feedback, and the relationship between simplicity and complexity.*
 

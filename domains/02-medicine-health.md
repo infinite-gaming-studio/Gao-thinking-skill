@@ -1,4 +1,7 @@
-# Medicine & Health
+---
+name: domain-medicine-health
+description: Reference for Modern Medicine, Psychiatry, Sleep Science. Significance dimension: healing, trauma, rest, mind-body boundary.
+---
 
 *This domain reveals: the meaning of healing, trauma, rest, the boundaries between mind and body, and the wisdom of the body.*
 

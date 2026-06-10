@@ -1,4 +1,7 @@
-# History & Civilization
+---
+name: domain-history-civilization
+description: Reference for World History, History of Science, Intellectual History, Comparative Civilization. Significance dimension: change, contingency, civilizational paths.
+---
 
 *This domain reveals: the meaning of change, contingency, repetition, and the patterns that civilizations — and individuals — follow across time.*
 

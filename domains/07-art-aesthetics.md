@@ -1,4 +1,7 @@
-# Arts & Aesthetics
+---
+name: domain-art-aesthetics
+description: Reference for Film Studies, Art History, Music Theory, Architecture, Aesthetics. Significance dimension: beauty, silence, imperfection, the sublime.
+---
 
 *This domain reveals: the meaning of beauty, silence, imperfection, the sublime, and the transformation of suffering into form.*
 

@@ -1,4 +1,7 @@
-# Social Sciences
+---
+name: domain-social-science
+description: Reference for Psychology, Social Psychology, Behavioral Economics, Sociology, Anthropology, Political Philosophy, Economics. Significance dimension: belonging, authority, irrationality, social self.
+---
 
 *This domain reveals: the meaning of belonging, authority, irrationality, the social construction of self, and the tension between the individual and the group.*
 

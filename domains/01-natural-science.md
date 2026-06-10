@@ -1,4 +1,7 @@
-# Natural Sciences
+---
+name: domain-natural-science
+description: Reference for Physics, Cosmology, Biology, Neuroscience, Cognitive Science, Genetics, Ecology, Complexity, Information Theory, Statistics. Each concept includes a Significance dimension (what human meaning it reveals) and This speaks to (what life experiences it maps to).
+---
 
 *This domain reveals: the meaning of impermanence, adaptation, uncertainty, the nature of reality, and the relationship between the observer and the observed.*
 

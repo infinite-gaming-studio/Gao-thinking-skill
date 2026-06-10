@@ -1,4 +1,7 @@
-# Future & Cross-Cultural
+---
+name: domain-future-interdisciplinary
+description: Reference for Futurology, Cross-Cultural Communication. Significance dimension: surprise, acceleration, difference.
+---
 
 *This domain reveals: the meaning of surprise, acceleration, uncertainty, and the challenge of understanding across difference.*
 
