@@ -1,64 +1,78 @@
-# Social Media Output Template
+# Social — A Literary Approach
 
-Format the reflection for social sharing. The tone should remain reflective and open-ended — never conclusive or prescriptive.
+Social media is not where conclusions go to die. It is where **beginnings** find their first reader. A good social post feels less like a statement and more like a stone dropped into still water — the ripples are the meaning.
 
-## Short Form (~300 chars)
+---
 
-Best for: Twitter, Mastodon, or as a teaser.
+## Short Form (~300 characters)
 
-```
-[A single insight sentence that captures the core significance]
-
-[1-2 sentences distilling the essence — what does this experience mean, across domains?]
-
-[3-5 hashtags]
-```
-
-## Long Form (~1400 chars)
-
-Best for: Weibo, Threads, or as a standalone post.
+A glimpse. A fragment that stays in the mind.
 
 ```
+Between entropy and elegy, the same truth appears:
+things fall apart, and this is why they matter.
 
-[Title / Hook — one line]
-
-[Opening — the personal experience, stated plainly]
-
-[1st domain insight — what this experience means through one lens]
-
-[2nd domain insight — a different dimension of meaning]
-
-[3rd domain insight — the most unexpected angle]
-
-[Closing — return to the reader, open-ended invitation]
-
-[3-5 hashtags]
+#Significance #Impermanence
 ```
+
+```
+We do not choose the patterns we repeat.
+We only choose when to see them.
+
+#Attachment #QuietThoughts
+```
+
+---
+
+## Long Form (~1400 characters)
+
+A slow walk. Three paragraphs, three turns of the same thought.
+
+```
+[An opening that asks, not tells — a question, an image,
+a line that stops the scroll]
+
+[A story from one domain. Not explained — evoked.]
+
+[A turn. A different lens. The same experience,
+seen from another window.]
+
+[A return. To the reader. To the question.
+No answer, but a different kind of silence.]
+
+[2-3 hashtags]
+```
+
+---
 
 ## Thread Format
 
-Best for: Twitter/X deep threads. Each post is a self-contained insight.
+Each post is one sentence. Together they make a thought.
 
 ```
-1/5 [Hook — a question or a striking observation]
+1/5 Somewhere in the gap between what we know and what we feel,
+     the real work happens.
 
-2/5 [Domain A insight — a single idea, no fluff]
+2/5 Physics says entropy increases. Things fall apart.
+     That is not a tragedy. That is a direction.
 
-3/5 [Domain B insight — a turn, a contrast]
+3/5 Literature says the unreliable narrator is not a flaw
+     but a feature. We are all telling stories we half-believe.
 
-4/5 [Domain C insight — the unexpected connection]
+4/5 Where these two meet — that is the place worth sitting with.
 
-5/5 [Closing — an open question, no answer. #Significance]
+5/5 Not an answer. An invitation. #Significance
 ```
 
-## Style Guide
+---
 
-| Rule | Why |
-|------|-----|
-| Plain text only | No markdown renders in social platforms |
-| One line break between paragraphs | Scannable, readable on mobile |
-| Hashtags: PascalCase | #SignificanceFinding — readable and accessible |
-| No emojis unless user requests | Keeps tone serious and reflective |
-| Opening: a question or a striking image | Hooks attention without being clickbait |
-| Closing: open-ended, no conclusion | The significance belongs to the reader |
-| Offer short + long versions | Let user choose based on platform |
+## Voice
+
+| Principle | It means |
+|-----------|----------|
+| **Evoke, don't explain** | An image does more than a definition |
+| **End open** | A question, a pause, never a period |
+| **One image per post** | One metaphor, held up to the light |
+| **Hashtags at the end only** | 2-3. PascalCase. Never in the body. |
+| **Plain text only** | The words carry the weight alone |
+| **No emojis** | Unless the reader calls for them |

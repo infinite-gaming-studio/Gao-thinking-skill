@@ -3,164 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{TITLE}} — Significance Record</title>
+<title>{{TITLE}} — 高思</title>
 <style>
-  /* === Reset & Base === */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "Georgia", "Times New Roman", serif;
-    max-width: 720px;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "Georgia", "EB Garamond", "Times New Roman", serif;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 3rem 2rem;
-    line-height: 2;
+    padding: 4rem 2.5rem;
+    line-height: 2.2;
     color: #2c2416;
-    background: #f7f3ed;
+    background: #f8f5f0;
     background-image:
-      radial-gradient(ellipse 100% 50% at 50% 0%, rgba(210,198,180,0.3) 0%, transparent 100%),
-      radial-gradient(ellipse 100% 50% at 50% 100%, rgba(210,198,180,0.15) 0%, transparent 100%);
+      repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(200,190,176,0.08) 1px, rgba(200,190,176,0.08) 2px);
+    font-weight: 300;
     font-size: 1.05rem;
-    font-weight: 400;
+    letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
-  /* === Title === */
+  /* === Title Block — thin, centered, breathing === */
   .title-block {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .title-rule {
+    width: 1.5rem;
+    height: 1px;
+    background: #c8bfb0;
+    margin: 0 auto 1.2rem;
   }
 
   h1 {
-    font-weight: 500;
-    font-size: 2rem;
-    letter-spacing: 0.04em;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
     color: #1a150e;
-    line-height: 1.4;
-  }
-
-  .title-line {
-    width: 3rem;
-    height: 1px;
-    background: #c4b8a8;
-    margin: 0.8rem auto;
+    line-height: 1.5;
+    margin-bottom: 0.15rem;
   }
 
   .meta {
-    color: #8a7e6e;
-    font-size: 0.82rem;
+    color: #a89f8e;
+    font-size: 0.78rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    margin-top: 0.5rem;
   }
 
-  /* === Ornamental Separator === */
+  /* === Separator — a thin breath === */
   .separator {
     text-align: center;
-    margin: 2.2rem 0;
-    color: #c4b8a8;
-    font-size: 1.1rem;
-    letter-spacing: 0.6em;
+    margin: 2.5rem 0;
+    color: #d5cdbf;
+    font-size: 0.7rem;
+    letter-spacing: 1.2em;
     user-select: none;
+    font-weight: 300;
   }
 
-  /* === Body Typography === */
+  /* === Section Headings — quiet, almost whispered === */
   h2 {
-    font-weight: 500;
-    font-size: 1.35rem;
-    margin-top: 2.5rem;
-    margin-bottom: 0.8rem;
-    color: #3d3224;
-    letter-spacing: 0.01em;
+    font-weight: 350;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: #3a3024;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
   }
 
+  h2::before {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1px;
+    background: #ddd6c8;
+    margin-bottom: 0.7rem;
+  }
+
+  /* === Body text — flowing, unhurried === */
   p {
-    margin: 1.2rem 0;
+    margin: 1rem 0;
     text-align: justify;
     text-justify: inter-ideograph;
+    hanging-punctuation: first;
   }
 
-  /* === Drop Cap === */
+  /* === First paragraph drop cap — only if requested === */
+  .drop-cap {
+    margin-top: 1.5rem;
+  }
   .drop-cap::first-letter {
-    font-size: 3.2em;
+    font-size: 3em;
     float: left;
-    line-height: 0.85;
-    margin-right: 0.4rem;
-    margin-top: 0.1rem;
-    color: #3d3224;
-    font-weight: 500;
+    line-height: 0.8;
+    margin-right: 0.35rem;
+    margin-top: 0.08rem;
+    color: #3a3024;
+    font-weight: 400;
     font-family: "Noto Serif SC", "Georgia", serif;
+    letter-spacing: -0.02em;
   }
 
-  /* === Blockquote === */
+  /* === Blockquote — the user's voice, set apart with stillness === */
   blockquote {
-    margin: 1.5rem 0;
-    padding: 0.8rem 1.5rem;
-    border-left: 3px solid #d4c8b8;
-    background: rgba(222,214,202,0.4);
-    color: #4a3f32;
+    margin: 2rem 0;
+    padding: 0.6rem 1.8rem;
+    color: #5a4f40;
     font-style: italic;
-    border-radius: 0 4px 4px 0;
+    font-weight: 350;
+    position: relative;
+  }
+
+  blockquote::before {
+    content: "\201C";
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    font-size: 2.5rem;
+    color: #d5cdbf;
+    font-family: "Georgia", serif;
+    line-height: 1;
+  }
+
+  blockquote::after {
+    content: "\201D";
+    position: absolute;
+    right: 0;
+    bottom: -0.8rem;
+    font-size: 2.5rem;
+    color: #d5cdbf;
+    font-family: "Georgia", serif;
+    line-height: 1;
   }
 
   blockquote p { margin: 0; }
 
-  /* === Pull Quote === */
+  /* === Pull Quote — the heart of the reflection, floating === */
   .pull-quote {
-    font-size: 1.1rem;
-    color: #5a4f40;
+    font-size: 1.02rem;
+    color: #4a3f32;
     text-align: center;
-    margin: 2rem 0;
-    padding: 1rem 2rem;
-    line-height: 1.8;
-    border-top: 1px solid #e2d8cc;
-    border-bottom: 1px solid #e2d8cc;
+    margin: 2.5rem 0;
+    padding: 0.8rem 1.5rem;
+    line-height: 2;
+    font-weight: 320;
+    font-style: italic;
+    position: relative;
   }
 
-  /* === Domain Tags === */
-  .domain-tag {
-    display: inline-block;
+  .pull-quote::before {
+    content: "\201C";
+    font-size: 2.8rem;
+    color: #d5cdbf;
+    font-family: "Georgia", serif;
+    position: absolute;
+    left: 50%;
+    top: -0.6rem;
+    transform: translateX(-50%);
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  /* === Domain Tag — contextual marker, not label === */
+  .domain-marker {
+    color: #a89f8e;
     font-size: 0.7rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #e8e0d6;
-    padding: 0.1rem 0.6rem;
-    border-radius: 2px;
-    color: #6a5f50;
-    margin-right: 0.3rem;
-    margin-bottom: 0.3rem;
-    letter-spacing: 0.04em;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    font-style: normal;
+    display: block;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    text-transform: uppercase;
   }
 
-  .domain-tag::before {
-    content: "§ ";
-    font-size: 0.65rem;
+  .domain-marker::before {
+    content: "\2014 ";
   }
 
   /* === Footer === */
   footer {
     margin-top: 4rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #e2d8cc;
-    font-size: 0.75rem;
-    color: #9a8e7e;
+    font-size: 0.72rem;
+    color: #c8bfb0;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    letter-spacing: 0.03em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    border-top: none;
+    position: relative;
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    background: #ddd6c8;
+    margin: 0 auto 1.2rem;
+  }
+
+  /* === Thin Rule (for use between sections if needed) === */
+  .thin-rule {
+    border: none;
+    height: 1px;
+    background: #e8e2d8;
+    margin: 2.5rem 0;
   }
 
   /* === Responsive === */
   @media (max-width: 600px) {
-    body { padding: 1.5rem 1.2rem; font-size: 0.98rem; }
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.15rem; }
-    .drop-cap::first-letter { font-size: 2.6em; }
-    blockquote { padding: 0.6rem 1rem; }
-    .pull-quote { padding: 0.6rem 1rem; font-size: 1rem; }
+    body { padding: 2rem 1.5rem; line-height: 2; font-size: 0.95rem; }
+    h1 { font-size: 1.3rem; }
+    h2 { font-size: 1.05rem; }
+    .drop-cap::first-letter { font-size: 2.4em; }
+    blockquote { padding: 0.4rem 1.2rem; }
+    blockquote::before { font-size: 1.8rem; }
+    blockquote::after { font-size: 1.8rem; }
+    .pull-quote { padding: 0.8rem 0.5rem; font-size: 0.98rem; }
   }
 
   /* === Print === */
   @media print {
-    body { background: white; color: black; }
+    body { background: white; color: black; max-width: none; padding: 1in; }
     footer { display: none; }
   }
 </style>
@@ -168,29 +241,30 @@
 <body>
 
 <div class="title-block">
+  <div class="title-rule"></div>
   <h1>{{TITLE}}</h1>
-  <div class="title-line"></div>
   <p class="meta">{{DATE}}</p>
 </div>
-
-<div class="separator">✦ ✦ ✦</div>
 
 {{#HAS_BLOCKQUOTE}}
 <blockquote>
 <p>{{USER_QUOTE}}</p>
 </blockquote>
-<div class="separator">· · ·</div>
 {{/HAS_BLOCKQUOTE}}
+
+<div class="separator">· · ·</div>
 
 {{#DROP_CAP_FIRST}}
 <div class="drop-cap">
 {{/DROP_CAP_FIRST}}
+
 {{CONTENT}}
+
 {{#DROP_CAP_FIRST}}
 </div>
 {{/DROP_CAP_FIRST}}
 
-<footer>— 高思 · Significance Record</footer>
+<footer>高 思</footer>
 
 </body>
 </html>
