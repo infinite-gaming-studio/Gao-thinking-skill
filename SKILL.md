@@ -22,6 +22,27 @@ A significance-finder skill. When someone shares a personal experience, select 5
 2. **Select** — pick 5 most relevant domains from the list below
 3. **Load** — read the corresponding files from `domains/`
 4. **Weave** — write a reflection connecting the personal to universal meaning patterns
+5. **Export** — ask the user if they want to save or share the reflection, then follow the Output section below
+
+## Output
+
+After the reflection is written, offer to export it.
+
+**Optimization** (ask first): content polish (`refactor-clean`), visual diagram (`mermaid-expert`), document formatting (`doc-generate`), or skip.
+
+**Format options** (let user choose):
+
+| Format | Action |
+|--------|--------|
+| Chat display | Return directly in conversation |
+| Markdown file | Write to `gaothinking_output/YYYY-MM-DD_{keyword}/reflection.md` |
+| Index HTML | Generate `index.html` (see `output-templates/index.html`) |
+| Social post | Generate `social.txt` with hook, scannable paragraphs, 3-5 hashtags |
+| Custom | Follow user's description |
+
+**Output path**: All files go to the user's project root under `gaothinking_output/YYYY-MM-DD_{keyword}/`. Tell the user the exact path after writing.
+
+**Templates**: Reference files in `output-templates/` for format guidance.
 
 ## Quick Reference
 
