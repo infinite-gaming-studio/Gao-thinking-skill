@@ -188,6 +188,20 @@ Gao-thinking-skill/
 
 ---
 
+## 更新
+
+方式不同，更新方法不同：
+
+| 安装方式 | 更新命令 |
+|---------|---------|
+| `npx skills add` | `npx skills update infinite-gaming-studio/Gao-thinking-skill` |
+| 手动软链 / `git clone` | `cd Gao-thinking-skill && git pull` |
+| 手动复制 | 重新 `git clone` 覆盖 |
+
+**注意：** 无论哪种方式，更新后都需要**重启 AI 助手**（新会话加载最新 SKILL.md）。
+
+---
+
 ## 开发
 
 ```bash
