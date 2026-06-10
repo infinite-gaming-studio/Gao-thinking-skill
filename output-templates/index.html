@@ -5,37 +5,192 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{TITLE}} — Significance Record</title>
 <style>
+  /* === Reset & Base === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "Georgia", "Times New Roman", serif;
     max-width: 720px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 3rem 2rem;
+    line-height: 2;
+    color: #2c2416;
+    background: #f7f3ed;
+    background-image:
+      radial-gradient(ellipse 100% 50% at 50% 0%, rgba(210,198,180,0.3) 0%, transparent 100%),
+      radial-gradient(ellipse 100% 50% at 50% 100%, rgba(210,198,180,0.15) 0%, transparent 100%);
+    font-size: 1.05rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* === Title === */
+  .title-block {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    color: #1a150e;
+    line-height: 1.4;
+  }
+
+  .title-line {
+    width: 3rem;
+    height: 1px;
+    background: #c4b8a8;
+    margin: 0.8rem auto;
+  }
+
+  .meta {
+    color: #8a7e6e;
+    font-size: 0.82rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  /* === Ornamental Separator === */
+  .separator {
+    text-align: center;
+    margin: 2.2rem 0;
+    color: #c4b8a8;
+    font-size: 1.1rem;
+    letter-spacing: 0.6em;
+    user-select: none;
+  }
+
+  /* === Body Typography === */
+  h2 {
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.8rem;
+    color: #3d3224;
+    letter-spacing: 0.01em;
+  }
+
+  p {
+    margin: 1.2rem 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+
+  /* === Drop Cap === */
+  .drop-cap::first-letter {
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.85;
+    margin-right: 0.4rem;
+    margin-top: 0.1rem;
+    color: #3d3224;
+    font-weight: 500;
+    font-family: "Noto Serif SC", "Georgia", serif;
+  }
+
+  /* === Blockquote === */
+  blockquote {
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.5rem;
+    border-left: 3px solid #d4c8b8;
+    background: rgba(222,214,202,0.4);
+    color: #4a3f32;
+    font-style: italic;
+    border-radius: 0 4px 4px 0;
+  }
+
+  blockquote p { margin: 0; }
+
+  /* === Pull Quote === */
+  .pull-quote {
+    font-size: 1.1rem;
+    color: #5a4f40;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
     line-height: 1.8;
-    color: #1a1a1a;
-    background: #fafaf8;
+    border-top: 1px solid #e2d8cc;
+    border-bottom: 1px solid #e2d8cc;
   }
-  h1 { font-weight: 400; font-size: 1.8rem; margin-bottom: 0.25rem; }
-  .meta { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
-  p { margin: 1.2rem 0; }
-  hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
-  .domain-label {
+
+  /* === Domain Tags === */
+  .domain-tag {
     display: inline-block;
-    font-size: 0.75rem;
-    background: #e8e6e3;
-    padding: 0.2rem 0.6rem;
-    border-radius: 3px;
-    color: #555;
+    font-size: 0.7rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #e8e0d6;
+    padding: 0.1rem 0.6rem;
+    border-radius: 2px;
+    color: #6a5f50;
     margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.04em;
+    font-weight: 500;
   }
-  footer { margin-top: 3rem; font-size: 0.8rem; color: #aaa; text-align: center; }
+
+  .domain-tag::before {
+    content: "§ ";
+    font-size: 0.65rem;
+  }
+
+  /* === Footer === */
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2d8cc;
+    font-size: 0.75rem;
+    color: #9a8e7e;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0.03em;
+  }
+
+  /* === Responsive === */
+  @media (max-width: 600px) {
+    body { padding: 1.5rem 1.2rem; font-size: 0.98rem; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.15rem; }
+    .drop-cap::first-letter { font-size: 2.6em; }
+    blockquote { padding: 0.6rem 1rem; }
+    .pull-quote { padding: 0.6rem 1rem; font-size: 1rem; }
+  }
+
+  /* === Print === */
+  @media print {
+    body { background: white; color: black; }
+    footer { display: none; }
+  }
 </style>
 </head>
 <body>
-<h1>{{TITLE}}</h1>
-<p class="meta">{{DATE}}</p>
 
+<div class="title-block">
+  <h1>{{TITLE}}</h1>
+  <div class="title-line"></div>
+  <p class="meta">{{DATE}}</p>
+</div>
+
+<div class="separator">✦ ✦ ✦</div>
+
+{{#HAS_BLOCKQUOTE}}
+<blockquote>
+<p>{{USER_QUOTE}}</p>
+</blockquote>
+<div class="separator">· · ·</div>
+{{/HAS_BLOCKQUOTE}}
+
+{{#DROP_CAP_FIRST}}
+<div class="drop-cap">
+{{/DROP_CAP_FIRST}}
 {{CONTENT}}
+{{#DROP_CAP_FIRST}}
+</div>
+{{/DROP_CAP_FIRST}}
 
-<footer>— generated by Gao-thinking-skill</footer>
+<footer>— 高思 · Significance Record</footer>
+
 </body>
 </html>

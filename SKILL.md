@@ -32,17 +32,25 @@ After the reflection is written, offer to export it.
 
 **Format options** (let user choose):
 
-| Format | Action |
-|--------|--------|
-| Chat display | Return directly in conversation |
-| Markdown file | Write to `gaothinking_output/YYYY-MM-DD_{keyword}/reflection.md` |
-| Index HTML | Generate `index.html` (see `output-templates/index.html`) |
-| Social post | Generate `social.txt` with hook, scannable paragraphs, 3-5 hashtags |
-| Custom | Follow user's description |
+| Format | Action | Template Reference |
+|--------|--------|-------------------|
+| Chat display | Return directly in conversation | — |
+| Markdown file | Write to `gaothinking_output/YYYY-MM-DD_{keyword}/reflection.md` | `output-templates/markdown.md` |
+| Index HTML | Generate `index.html` | `output-templates/index.html` |
+| Social post | Generate `social.txt` with hook, paragraph breaks, 3-5 hashtags | `output-templates/social.md` |
+| Custom | Follow user's description | — |
 
 **Output path**: All files go to the user's project root under `gaothinking_output/YYYY-MM-DD_{keyword}/`. Tell the user the exact path after writing.
 
-**Templates**: Reference files in `output-templates/` for format guidance.
+**Design notes for HTML output**:
+- Warm paper tones (#f7f3ed background, #2c2416 text) — easy on elderly eyes
+- Serif body font for comfortable long-form reading
+- Generous line-height (2.0) and font-size (1.05rem) — no squinting
+- Drop cap on first paragraph, ornamental separators between sections
+- Domain tags with § prefix for visual clarity
+- Print and mobile responsive
+
+**Templates** are in `output-templates/`. Adapt freely — the structure is a guide, not a constraint.
 
 ## Quick Reference
 
