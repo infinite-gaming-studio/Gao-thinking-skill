@@ -6,6 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent-Skill-7c3aed)]()
+[![skills.sh](https://img.shields.io/badge/skills.sh-Compatible-blue)](https://skills.sh)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 **An AI thinking companion skill.** When a user records a thought, behavior, or reflection, it selects relevant knowledge domains and universal mental models to reveal deeper significance in flowing prose. No judgment, no direction — only meaning revealed through multiple lenses.
@@ -44,27 +45,28 @@ Do not evaluate, affirm, or negate. Only unfold, never conclude.
 
 ## Installation
 
-### OpenCode
+### One-line (any runtime, auto-detect)
 
 ```bash
-git clone https://github.com/infinite-gaming-studio/Gao-thinking-skill.git
-ln -s /absolute/path/to/Gao-thinking-skill ~/.opencode/skills/Gao-thinking-skill
+npx skills add infinite-gaming-studio/Gao-thinking-skill
 ```
 
-Restart OpenCode — the skill will auto-load when triggered.
+The [skills CLI](https://github.com/vercel-labs/skills) auto-detects your runtime (Claude Code, Codex, Cursor, OpenCode, Gemini CLI, etc.) and installs to the correct directory.
 
-### Claude Code
+### Manual by runtime
 
-```bash
-npx skills add infinite-gaming-studio/Gao-thinking-skill -g
-```
+| Runtime | Command |
+|---------|---------|
+| **OpenCode** | `git clone https://github.com/infinite-gaming-studio/Gao-thinking-skill.git && ln -s "$(pwd)/Gao-thinking-skill" ~/.opencode/skills/Gao-thinking-skill` |
+| **Claude Code** | `npx skills add infinite-gaming-studio/Gao-thinking-skill -g` or manually: `git clone ... && ln -s "$(pwd)/Gao-thinking-skill" ~/.claude/skills/Gao-thinking-skill` |
+| **Codex CLI** | `npx skills add infinite-gaming-studio/Gao-thinking-skill -a codex` |
+| **Cursor** | `npx skills add infinite-gaming-studio/Gao-thinking-skill -a cursor` |
 
-Or manually:
+After installation, restart your AI assistant — the skill auto-loads when triggered.
 
-```bash
-git clone https://github.com/infinite-gaming-studio/Gao-thinking-skill.git
-ln -s "$(pwd)/Gao-thinking-skill" ~/.claude/skills/Gao-thinking-skill
-```
+### Reference-only mode
+
+If your runtime doesn't support Agent Skills auto-loading, paste the contents of `SKILL.md` into your conversation. The skill works as plain Markdown + YAML frontmatter.
 
 ---
 
@@ -173,11 +175,19 @@ Plus 6 combination patterns for using 2-3 models together.
 
 ## Updating
 
-```bash
-cd Gao-thinking-skill && git pull
-```
+| Method | Command |
+|--------|---------|
+| **npx (any runtime)** | `npx skills update Gao-thinking-skill` |
+| **Manual (git clone)** | `cd Gao-thinking-skill && git pull` |
 
 After updating, restart your AI assistant to load the latest SKILL.md.
+
+## Uninstalling
+
+| Runtime | Command |
+|---------|---------|
+| **npx (any runtime)** | `npx skills remove Gao-thinking-skill` |
+| **Manual** | Delete the skill directory from your runtime's skills folder (e.g. `rm -rf ~/.opencode/skills/Gao-thinking-skill`) |
 
 ---
 
