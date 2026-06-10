@@ -38,6 +38,7 @@ When someone confides in you:
 2. **Select domains** — pick the 5 most relevant domains whose significance frameworks best illuminate this experience
 3. **Load on-demand** — use the Read tool to access the corresponding domain files
 4. **Weave significance** — write a multi-dimensional reflection that connects the personal experience to the universal meaning patterns found in each domain
+5. **Offer output** — after the reflection, load the `output/` sub-skill to help the user format or export the result
 
 ## Principles
 
