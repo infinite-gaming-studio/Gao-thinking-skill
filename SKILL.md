@@ -30,6 +30,15 @@ After the reflection is written, offer to export it.
 
 **Optimization** (ask first): content polish (`refactor-clean`), visual diagram (`mermaid-expert`), document formatting (`doc-generate`), or skip.
 
+**Crucial — hide the scaffolding.** The reflection must read as a standalone piece of writing, not an AI analysis. Never include:
+- "Let me refract this through five lenses" or any meta-framing
+- The fact that domains were selected or loaded
+- Any explanation of the process or methodology
+- "表面上是关于X，但更深的问题是Y" / "让我从X个棱镜来折射" — these are AI's work notes, not part of the essay
+- Domain names as visible labels or section headers
+
+The domain structure is the **skeleton**, not the **skin**. The reader should feel the shift between sections but never see the join. Each section is a paragraph or two, flowing into the next, with the domain's perspective woven invisibly into the prose. The only visible markers are the tone change and the thin decorative rules in HTML output.
+
 **Format options** (let user choose):
 
 | Format | Action | Template Reference |
@@ -98,6 +107,7 @@ When generating HTML output, match the watermark and decorative icons to the ref
 | Too many domains (dilutes) | Max 5. Depth over breadth |
 | Too few domains | Min 3. Insight lives between them |
 | Academic tone | Flowing prose, natural references, no citations |
+| Visible scaffolding ("five lenses", domain names) | Hide the process. Reader should never know domains were selected |
 | Not returning to the user | Close by coming back to their story |
 
 ## Principles
