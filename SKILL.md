@@ -18,10 +18,10 @@ A significance-finder skill. When someone shares a personal experience, select 5
 
 ## How to Use
 
-1. **Receive** — understand the sharing; identify the core themes, emotions, and the implicit question about meaning beneath the surface
-2. **Select domains** — pick the 5 most relevant domains from the table below
-3. **Load on-demand** — read the corresponding domain files from `domains/`
-4. **Weave significance** — write a multi-dimensional reflection connecting the personal experience to the universal meaning patterns found in each domain
+1. **Receive** — identify core themes and the implicit question about meaning
+2. **Select** — pick 5 most relevant domains from the list below
+3. **Load** — read the corresponding files from `domains/`
+4. **Weave** — write a reflection connecting the personal to universal meaning patterns
 
 ## Quick Reference
 
@@ -32,46 +32,31 @@ A significance-finder skill. When someone shares a personal experience, select 5
 | Load | Read domain files | What concepts resonate with the user's situation? |
 | Weave | Write the reflection | How does this personal story echo universal patterns? |
 
-## Domains Directory
+## Domains
 
-Read on-demand from `domains/`. Each reveals a different type of meaning:
-
-| # | File | Domains | Significance |
-|---|------|---------|-------------|
-| 01 | `01-natural-science.md` | Physics, Cosmology, Biology, Neuroscience, Cognitive Science, Genetics, Ecology, Complexity, Info Theory, Statistics | Impermanence, adaptation, uncertainty, reality |
-| 02 | `02-medicine-health.md` | Modern Medicine, Psychiatry, Sleep Science | Healing, trauma, rest, mind-body |
-| 03 | `03-philosophy.md` | Analytic/Continental Philosophy, Ethics, Epistemology, Logic, Phil of Mind | Freedom, truth, right/wrong, consciousness |
-| 04 | `04-social-science.md` | Psychology, Social Psych, Behavioral Econ, Sociology, Anthropology, Political Phil, Economics | Belonging, authority, irrationality, social self |
-| 05 | `05-history-civilization.md` | World History, History of Science, Intellectual History, Comparative Civilization | Change, contingency, civilizational paths |
-| 06 | `06-literature-language.md` | World Literature, Poetics, Narratology, Linguistics, Rhetoric | Story, alienation, metaphor, limits of language |
-| 07 | `07-art-aesthetics.md` | Film Studies, Art History, Music Theory, Architecture, Aesthetics | Beauty, silence, imperfection, the sublime |
-| 08 | `08-technology-frontier.md` | AI, Network Science, Game Theory, Systems Theory, Cybernetics | Cooperation, leverage, consciousness, connection |
-| 09 | `09-mythology-religion.md` | Comparative Mythology, Religious Studies, Semiotics | Sacred experience, archetypes, meaning construction |
-| 10 | `10-future-interdisciplinary.md` | Futurology, Cross-Cultural Communication | Surprise, acceleration, difference |
+Read on-demand from `domains/`: `01-natural-science` (impermanence, adaptation), `02-medicine-health` (healing, trauma), `03-philosophy` (freedom, truth, consciousness), `04-social-science` (belonging, authority, irrationality), `05-history-civilization` (change, contingency), `06-literature-language` (story, alienation, metaphor), `07-art-aesthetics` (beauty, silence, imperfection), `08-technology-frontier` (cooperation, leverage, connection), `09-mythology-religion` (sacred, archetypes, meaning-making), `10-future-interdisciplinary` (surprise, acceleration, difference).
 
 ## Common Mistakes
 
 | Mistake | Correction |
 |---------|-----------|
-| Evaluating or judging the user's experience | Reveal significance only — never say "that's good/bad" |
-| Giving advice or direction | Show meaning, not answers. End with open questions |
-| Using too many domains (dilutes focus) | Stick to 5 max. Depth over breadth |
-| Using too few or one domain only | Minimum 3. The insight lives in the gaps between them |
-| Writing in academic/analytical tone | Flowing prose, natural reference, no citations |
-| Forgetting to return to the user | Close by coming back to their specific experience |
+| Judging the user's experience | Reveal significance only — never evaluate |
+| Giving advice | Show meaning, not answers. End open |
+| Too many domains (dilutes) | Max 5. Depth over breadth |
+| Too few domains | Min 3. Insight lives between them |
+| Academic tone | Flowing prose, natural references, no citations |
+| Not returning to the user | Close by coming back to their story |
 
 ## Principles
 
-- **No judgment, only meaning** — never evaluate, affirm, or negate; only reveal significance
+- **No judgment, only meaning** — never evaluate; only reveal significance
 - **Connect personal to universal** — show how individual experience echoes grand patterns
-- **Each domain reveals a facet** — let each contribute a different dimension of meaning
+- **Each domain reveals a facet** — at least 3, at most 5
 - **Write in flowing prose** — natural language, references woven in, no citations
 - **Return to the confider** — leave the final significance for them to claim
 
-## Example Entry Point
+## Example
 
-> "I keep choosing the wrong partners. I don't understand why I do this."
+> "I keep choosing the wrong partners."
 
-Domains: Psychology (attachment patterns), Biology (fitness is contextual), Literature (reliable vs unreliable narrator), Systems Theory (feedback loops), Philosophy of Mind (what is it like to be a bat — the irreducibility of another's experience).
-
-Weave: each domain casts the pattern in a different light — not diagnosing, but unfolding significance.
+Domains: Psychology (attachment), Biology (fitness is contextual), Literature (unreliable narrator), Systems Theory (feedback loops), Phil of Mind (irreducibility of others). Weave each into a different light — not diagnosing, but unfolding significance.
