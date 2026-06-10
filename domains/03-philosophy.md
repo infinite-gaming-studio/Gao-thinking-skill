@@ -5,6 +5,40 @@ description: Reference for Analytic Philosophy, Continental Philosophy, Ethics, 
 
 *This domain reveals: the meaning of freedom, truth, right and wrong, consciousness, and the limits of what can be known.*
 
+## 核心心智模型
+
+| 模型 | 核心思想 | 一句话应用 |
+|------|---------|-----------|
+| **存在先于本质** | 你不是带着预先设定的剧本来到这个世界的——你先存在，然后定义自己 | 迷茫不是缺陷，没有预设的剧本意味着你有选择权 |
+| **洞穴隐喻** | 你以为看到的全部现实只是一个影子——走出去是唯一能验证的方式，但走出去的过程会被称为疯癫 | 你现在确信的事可能只是你所在洞穴的投影 |
+| **语言即界限（Wittgenstein）** | 不要追问"意义"是什么——去看它是如何被使用的。意义在用法里，不在定义里 | 很多痛苦来自追问一个没有答案的定义，而不是观察实际发生的事 |
+| **无知之幕（Rawls）** | 设计规则时假设你不知道自己会站在哪个位置——这才是公正 | 当你拥有优势时，你对"公平"的判断最容易偏离公正 |
+
+## 经典意象 / 思想实验
+
+- **西西弗斯是幸福的**：Camus 说我们必须想象西西弗斯是幸福的——不是因为他能停止推石头，而是因为他意识到了荒谬并接受它
+- **中文房间**：Searle 说一个不懂中文的人按规则手册回答中文问题——他表现懂了，但他真的懂了吗？理解是什么？
+- **电车难题**：不是让你选择撞谁——它让你暴露你用来做道德判断的那个原则，并发现它站不住脚
+
+## → 跨域连接
+
+| 连接目标 | 连接方式 |
+|---------|---------|
+| **CORE_MODELS: 确认偏差** | 你相信自己有一套自洽的哲学体系——但你可能只是筛选了支持它的证据 |
+| **CORE_MODELS: 安全边际** | 认识论上的安全边际——不要让你的确信度超过证据的强度 |
+| **DOMAIN_TENSIONS: 应然 vs 实然** | 科学描述世界"是什么"——哲学追问"应该是什么"，这两者之间的鸿沟是人的定义 |
+| **DOMAIN_TENSIONS: 自由意志 vs 生物决定论** | 存在主义说你是自由的——神经科学说你的决定在意识之前就完成了 |
+| **→ 自然科学** | 自由意志的神经科学实验——Libet实验挑战了"是我在做选择"的直觉 |
+| **→ 文学语言** | 存在主义文学中的主人公——他们不是被情节推着走的，他们是自己选择的 |
+
+## 反模式警告
+
+- ❌ 用哲学名词假装深度——"这是尼采说的"不如解释蝴蝶为什么必须在风暴中飞翔
+- ❌ 把哲学立场当个人建议——说"你应该像加缪一样接受荒谬"是把生活方式简化为口号
+- ❌ 把复杂的哲学争议简化为一句话真理——康德≠快乐公式
+
+---
+
 ## 14. Analytic Philosophy
 Wittgenstein: the meaning of a word is its use — don't ask for meaning, look at usage. Quine: beliefs form a web; facing experience, only the whole can be adjusted, no sentence is sacred. Kripke: things could have been otherwise.
 

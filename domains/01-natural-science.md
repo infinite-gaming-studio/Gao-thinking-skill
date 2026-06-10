@@ -5,6 +5,40 @@ description: Reference for Physics, Cosmology, Biology, Neuroscience, Cognitive 
 
 *This domain reveals: the meaning of impermanence, adaptation, uncertainty, the nature of reality, and the relationship between the observer and the observed.*
 
+## 核心心智模型
+
+| 模型 | 核心思想 | 一句话应用 |
+|------|---------|-----------|
+| **不确定性原理** | 观测改变被观测者，不确定性是事物的根本属性 | "不知道"不是缺陷，是自然的结构 |
+| **熵增** | 一切趋向无序——这是时间箭头的秘密 | 混乱是自然趋势，秩序需要持续做功 |
+| **适者生存（非最强）** | 不是最强壮的生存，是最能适应的 | 完美适应今天的人，在明天可能第一个消失 |
+| **涌现** | 每个蚂蚁低智，蚁群聪明——整体智力不可还原 | 你不需要理解一切才能成为智能整体的一部分 |
+| **贝叶斯更新** | 每一次新证据都应更新信念 | 固执不是坚守，是拒绝更新——智慧是频率 |
+
+## 经典意象 / 思想实验
+
+- **蝴蝶效应**：亚马逊的一只蝴蝶煽动翅膀，可能引发德克萨斯两周后的龙卷风——不是诗，是微分方程
+- **费曼的谦虚**："没有人真正理解量子力学"——最深层的现实可能永远蒙着一层面纱
+- **我们都是星尘**：卡尔的诗意不在比喻里——你的身体里的每个重原子都来自一颗爆炸的恒星
+
+## → 跨域连接
+
+| 连接目标 | 连接方式 |
+|---------|---------|
+| **CORE_MODELS: 反馈回路** | 生态系统的自我调节与崩溃——平衡回路维持稳态，强化回路放大偏离 |
+| **CORE_MODELS: 回归均值** | 统计学的必然——高峰之后必有低谷，不是因为做错了什么 |
+| **DOMAIN_TENSIONS: 应然 vs 实然** | 科学描述世界"是什么"，不足以回答"应该是什么" |
+| **→ 哲学** | 量子力学的观察者效应与哲学中的现象学——现实是否独立于观察？ |
+| **→ 社会科学** | 认知科学的确认偏差与社会学的群体极化——同一个机制，两个尺度 |
+
+## 反模式警告
+
+- ❌ 用物理学决定论否定个人选择的意义——那是范畴错误，物理定律不回答人生问题
+- ❌ 把演化论简化为"弱肉强食"——共生和合作在演化中同样重要
+- ❌ 用复杂性理论解释一切（everything is chaos/emergence）——那等于什么都没说
+
+---
+
 ## 1. Physics
 Heisenberg's observer effect: observing changes the observed. Newton vs. Bohr — is the world deterministic or probabilistic? The second law of thermodynamics: entropy always increases, the secret of time's arrow. Feynman said no one truly understands quantum mechanics — at the deepest level, reality may always have a veil.
 

@@ -5,6 +5,39 @@ description: Reference for World Literature, Poetics, Narratology, Linguistics, 
 
 *This domain reveals: the meaning of story, alienation, metaphor, the limits and powers of language, and the narrative structure of human experience.*
 
+## 核心心智模型
+
+| 模型 | 核心思想 | 一句话应用 |
+|------|---------|-----------|
+| **叙事弧线（Todorov）** | 所有的故事都是从平衡到失衡再回到平衡——不是公式，是人类理解变化的深层结构 | 你的生活感到混乱，是因为你正处于"失衡"的那一段——平衡会在故事的另一端 |
+| **不可靠的叙述者（Booth）** | 一旦你开始怀疑叙述者，你就不再是被动的读者——你必须自己判断什么是真的 | 你对自己故事的讲述可能不是真相——最不可靠的叙述者有时是你在镜子里的那个人 |
+| **语言的边界即世界的边界（Sapir-Whorf）** | 语言不是思想的容器——它限制甚至决定了你能思考的内容 | 你无法为一种不存在的情绪找到词，不是因为语言不够丰富，是因为语言本身就没有为你准备那个出口 |
+| **陌生化（Shklovsky）** | 艺术的任务是把熟悉的东西变得陌生——因为你已经对生活视而不见了 | 重复让一切归入背景噪音——你需要被"陌生化"才会真正看见 |
+
+## 经典意象 / 思想实验
+
+- **卡夫卡的甲虫**：一个人变成甲虫后，家人的反应不是恐惧，而是"麻烦"——最可怕的异化不是被驱逐，是被当作不便的来源
+- **博尔赫斯的分岔小径**：时间不是一条线，是一座不断分岔的迷宫——你走过的路是你会走过的路，而那些没走过的路也是你
+- **巴别塔**：语言的分歧不是诅咒——是条件。如果没有巴别塔，就不会有诗歌
+
+## → 跨域连接
+
+| 连接目标 | 连接方式 |
+|---------|---------|
+| **CORE_MODELS: 叙事谬误** | 文学明知自己在编故事，人生叙事假装自己不是——两者之间的边界比看上去模糊 |
+| **CORE_MODELS: 涌现** | 语言的涌现属性——拼写、语法、意义都不是被发明的，是从使用中浮现的 |
+| **DOMAIN_TENSIONS: 叙事自我 vs 统计自我** | 文学保护"例外"——当一个统计数据否定你的体验时，文学说"你的故事仍然真实" |
+| **→ 社会科学** | 修辞学与权力——谁有说话的资格？谁的故事被听到了？ |
+| **→ 神话宗教** | 原型叙事的跨文化一致性——英雄之旅不是西方发明，是大脑的结构 |
+
+## 反模式警告
+
+- ❌ 把文学理论当人生格言——卡夫卡不是建议你变成甲虫，他是在展示异化
+- ❌ 过度解读——不是每个梦都有意义，不是每件事都是叙事
+- ❌ 用"不可靠叙述者"为自我欺骗开脱——文学技巧不是人生策略
+
+---
+
 ## 31. World Literature
 Kafka: a man transforms into a bug; his family worries about the inconvenience, not the pain. Borges' garden: time is not a line but a forking labyrinth. Calvino's lightness: a rebellion against heaviness.
 

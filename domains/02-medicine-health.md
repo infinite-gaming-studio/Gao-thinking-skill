@@ -5,6 +5,39 @@ description: Reference for Modern Medicine, Psychiatry, Sleep Science. Significa
 
 *This domain reveals: the meaning of healing, trauma, rest, the boundaries between mind and body, and the wisdom of the body.*
 
+## 核心心智模型
+
+| 模型 | 核心思想 | 一句话应用 |
+|------|---------|-----------|
+| **身体会记住** | 创伤不是只在头脑里——肌肉和神经也保存着过去的重量 | 你的身体知道你自己还没承认的事 |
+| **信念即药物** | 安慰剂效应——相信本身就是生理变化 | 你对好转的预期是治疗的一部分，不是虚假的安慰 |
+| **早期模板** | 依恋理论——最初的几个人际关系教会你如何爱一辈子 | 重复的模式不是在惩罚你，是在向你展示你学会的方式 |
+| **休息不是关机** | 睡眠是大脑的夜间维护——主动的修复，不是被动的停工 | 你需要停下不是因为软弱，是因为修复本身就是工作 |
+
+## 经典意象 / 思想实验
+
+- **身体里的90%不是你**：你体内的细胞中，90%不属于你的基因组——你是生态系统，不是个体
+- **膝盖的疼痛没有原因**：van der Kolk 的病人多年背痛，治愈创伤后疼痛消失——身体在替心理说话
+- **做梦的大脑在编故事**：Hobson 说梦是随机信号被编织成故事——不是每个梦都有意义，但编织意义的冲动本身就有意义
+
+## → 跨域连接
+
+| 连接目标 | 连接方式 |
+|---------|---------|
+| **CORE_MODELS: 反馈回路** | 慢性疼痛的强化回路——痛→不敢动→肌肉萎缩→更痛 |
+| **CORE_MODELS: 回归均值** | 抑郁症发作后的自然好转被误认为是"治疗方案有效" |
+| **DOMAIN_TENSIONS: 自由意志 vs 生物决定论** | 成瘾究竟是选择的失败还是神经回路的锁定？ |
+| **→ 哲学** | 心身问题的临床证据——意识究竟在多大程度上"在"大脑里？ |
+| **→ 社会科学** | 创伤的代际传递——社会结构如何变成生理现实 |
+
+## 反模式警告
+
+- ❌ 把心理状态简化为化学失衡——"抑郁症就是血清素低"是对复杂系统的粗暴还原
+- ❌ 给出医疗建议——你不是医生。揭示意义，不开处方
+- ❌ 用创伤理论解释一切困扰——不是每件让你不舒服的事都是"创伤"
+
+---
+
 ## 11. Modern Medicine
 The placebo effect: belief itself is medicine. The immune system's exquisite distinction between self and non-self. Ninety percent of the cells in your body are not "you." Hippocrates: first, do no harm.
 

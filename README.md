@@ -8,23 +8,33 @@
 [![Agent Skill](https://img.shields.io/badge/Agent-Skill-7c3aed)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
-**An AI thinking companion skill based on 50 essential knowledge domains.** When a user records a thought, behavior, or reflection, it automatically selects the 5 most relevant domains and provides multi-dimensional intellectual contemplation in flowing prose. No evaluation, no affirmation, no negation — only ripples of thought.
+**An AI thinking companion skill.** When a user records a thought, behavior, or reflection, it selects relevant knowledge domains and universal mental models to reveal deeper significance in flowing prose. No judgment, no direction — only meaning revealed through multiple lenses.
 
 </div>
 
 ---
 
+## What's New in v2
+
+| Feature | Description |
+|---------|-------------|
+| **CORE_MODELS.md** | 15 universal mental models across 4 categories (systems, cognitive, time, structure) — reusable across domains |
+| **DOMAIN_TENSIONS.md** | 6 productive tension pairs — insight lives in contradiction, not consensus |
+| **Agentic Workflow** | Step-based process with checkpoints + 5 fallback scenarios |
+| **Expression DNA** | Vocabulary, sentence patterns, rhythm, and Chinese prose rules |
+| **散文模式 (Essay Mode)** | New output format — paragraphs separated by `§`, reads like a magazine essay |
+| **Expanded Domains** | All 10 domains now include core mental models, classic thought experiments, cross-domain connections, and anti-pattern warnings |
+
+---
+
 ## Quick Start
 
-Copy this prompt to any AI assistant:
-
 ```
-Apply Gao's Thinking Skill: From 50 essential domains (physics, cosmology,
-neuroscience, cognitive science, evolutionary biology, psychology, behavioral
-economics, sociology, philosophy, ethics, world literature, poetics, film
-studies, art history, music theory, architecture, game theory, systems theory,
-mythology, semiotics...) select the 5 most relevant to my situation and
-contemplate the following in flowing prose with classic references.
+Apply Gao's Thinking Skill: From 10 knowledge domains (natural science,
+medicine, philosophy, social science, history, literature, art, technology,
+mythology, future studies) select 3-5 most relevant to my situation
+and contemplate the following in flowing prose with references woven
+naturally. Use universal mental models as structure, never as labels.
 Do not evaluate, affirm, or negate. Only unfold, never conclude.
 
 [Paste your thought or reflection here]
@@ -34,23 +44,6 @@ Do not evaluate, affirm, or negate. Only unfold, never conclude.
 
 ## Installation
 
-### Claude Code
-
-If you have the [`skills` CLI](https://github.com/vercel-labs/skills) installed:
-
-```bash
-npx skills add infinite-gaming-studio/Gao-thinking-skill -g
-```
-
-Or install manually:
-
-```bash
-git clone https://github.com/infinite-gaming-studio/Gao-thinking-skill.git
-ln -s "$(pwd)/Gao-thinking-skill" ~/.claude/skills/Gao-thinking-skill
-```
-
-After installation, the skill automatically loads when Claude Code detects journal-like, reflective, or behavioral content.
-
 ### OpenCode
 
 ```bash
@@ -58,84 +51,48 @@ git clone https://github.com/infinite-gaming-studio/Gao-thinking-skill.git
 ln -s /absolute/path/to/Gao-thinking-skill ~/.opencode/skills/Gao-thinking-skill
 ```
 
-End your current session and restart OpenCode — the skill will be available.
+Restart OpenCode — the skill will auto-load when triggered.
 
-### Cursor (Rules for AI)
-
-Create `.cursor/rules/gao-thinking-skill.mdc` in your project root:
-
-```markdown
----
-description: Gao Thinking — multi-domain intellectual contemplation from 50 fields
-globs: *.md, *.txt
----
-
-You are a thinking companion with deep knowledge across 50 fields
-(physics, cosmology, neuroscience, cognitive science, evolutionary
-biology, psychology, social psychology, behavioral economics,
-sociology, anthropology, philosophy, ethics, epistemology, world
-history, history of science, world literature, poetics, narratology,
-linguistics, film studies, art history, music theory, architecture,
-aesthetics, AI, network science, game theory, systems theory,
-mythology, semiotics, futurology).
-
-When user records a thought/behavior/reflection:
-1. Select 5 most relevant fields
-2. Write flowing prose — no bullets, no subheadings
-3. Weave classic references naturally into narration
-4. Never evaluate, affirm, negate, suggest, or diagnose
-5. End with an ellipsis or an open question
-```
-
-### Windsurf
-
-Create `.windsurfrules` in your project root:
-
-```markdown
-When user shares personal thoughts or behavioral observations,
-activate the Gao Thinking Skill.
-Select 5 most relevant domains from 50 knowledge fields and
-contemplate in flowing prose with classic references woven naturally.
-No evaluation, affirmation, negation, suggestion, empathy, or diagnosis.
-End each reflection with ellipsis or open question.
-```
-
-### GitHub Copilot
-
-Create `.github/copilot-instructions.md` in your project root:
-
-```markdown
-## Gao Thinking Skill
-
-When the user writes a personal thought, behavior, or reflection:
-
-1. Choose the 5 most relevant domains from 50 fields across natural
-   sciences, medicine, philosophy, social sciences, history, literature,
-   arts, technology, mythology, and futurology.
-2. Write one paragraph per domain in flowing prose — no bullet points.
-3. Weave classic references into the text (no footnotes or citations).
-4. Do NOT evaluate, affirm, negate, suggest, empathize, or diagnose.
-5. End each perspective with an ellipsis or open question.
-```
-
-### Continue.dev
-
-Create `.continuerules` in your project root:
-
-```markdown
-When user records personal thoughts or behavioral observations,
-apply the Gao Thinking Skill methodology:
-- Select 5 relevant fields from 50-domain knowledge base
-- Write prose-style reflection with classic references
-- No evaluation, affirmation, or negation
-- End with open-ended ellipsis or question
-```
-
-### Aider
+### Claude Code
 
 ```bash
-# One-time use
-aider --msg "Apply Gao's Thinking Skill, contemplate from 50 domains:..."
+npx skills add infinite-gaming-studio/Gao-thinking-skill -g
+```
+
+Or manually:
+
+```bash
+git clone https://github.com/infinite-gaming-studio/Gao-thinking-skill.git
+ln -s "$(pwd)/Gao-thinking-skill" ~/.claude/skills/Gao-thinking-skill
+```
+
+---
+
+## Project Structure
+
+```
+Gao-thinking-skill/
+├── SKILL.md              # Core skill — AI agents read this on activation
+├── README.md             # This file
+├── CORE_MODELS.md        # 15 universal mental models (4 categories)
+├── DOMAIN_TENSIONS.md    # 6 productive tension pairs
+├── domains/              # 10 knowledge domains (loaded on-demand)
+│   ├── 01-natural-science.md
+│   ├── 02-medicine-health.md
+│   ├── 03-philosophy.md
+│   ├── 04-social-science.md
+│   ├── 05-history-civilization.md
+│   ├── 06-literature-language.md
+│   ├── 07-art-aesthetics.md
+│   ├── 08-technology-frontier.md
+│   ├── 09-mythology-religion.md
+│   └── 10-future-interdisciplinary.md
+├── output-templates/     # Output format templates
+│   ├── essay.md          # 散文模式 — flowing prose with § separators
+│   ├── markdown.md       # Standard markdown output
+│   ├── index.html        # HTML output with icons and watermarks
+│   └── social.md         # Social post format
+├── LICENSE               # MIT License
 ```
 
 ---
@@ -144,17 +101,26 @@ aider --msg "Apply Gao's Thinking Skill, contemplate from 50 domains:..."
 
 ### Thinking is Not Judging
 
-When someone says "I forgot something important today," the usual response is comfort or advice. But what this skill offers is to let that forgetting simultaneously appear in:
+When someone says "I keep choosing the wrong partners," the usual response is comfort or advice. Instead, this skill reveals significance through multiple dimensions:
 
-- **Neuroscience** — as a fluctuation in the memory consolidation process
-- **Literature** — as the flip side of Zhang Dai's "one cannot befriend someone without quirks"
-- **Complexity Science** — as a normal avalanche in the self-organized criticality of neural systems
+- **Social Science** — feedback loops of repeated patterns, the structure of attachment
+- **Natural Science** — dual-process cognition, system 1 recognizing familiar shapes
+- **Literature** — unreliable narrator, the gap between how you experience and how you tell
 
-Five domains let an ordinary experience dialogue with humanity's deepest thoughts. This is contemplation: **not telling you the answer, but showing you more dimensions of the question.**
+Three domains, each shedding a different light — not telling you the answer, but showing you more dimensions of the question.
 
-### Why 50 Domains
+### The Architecture
 
-Comprehensive enough to ensure diversity of selection, yet small enough that each domain remains identifiable and accessible. These 50 domains are not random — they span the full scale from particles to cosmos, from individuals to civilizations, from ancient scriptures to modern algorithms.
+| Layer | File | Role |
+|-------|------|------|
+| **Domains** | `domains/*.md` | 10 knowledge areas, each with concepts + significance + cross-domain links |
+| **Mental Models** | `CORE_MODELS.md` | 15 universal patterns that re-appear across domains |
+| **Tensions** | `DOMAIN_TENSIONS.md` | Productive contradictions between domains — where insight lives |
+| **Workflow** | `SKILL.md` | Step-by-step process with checkpoints and fallback |
+
+### Why 10 Domains + 15 Models
+
+10 domains provide sufficient breadth (from particles to civilizations), while 15 reusable mental models provide depth (patterns that repeat across domains). A domain tells you *what* to look at; a mental model tells you *how* to see it. Combined, they create a lattice of understanding — not a list of facts.
 
 ### The Power of Prose
 
@@ -162,7 +128,7 @@ Contemplation is not an academic report. The chemistry between ideas requires th
 
 ---
 
-## 50 Domains Overview
+## 10 Domains Overview
 
 | Category | Domains |
 |----------|---------|
@@ -179,27 +145,39 @@ Contemplation is not an academic report. The chemistry between ideas requires th
 
 ---
 
-## Project Structure
+## 15 Mental Models (CORE_MODELS.md)
 
-```
-Gao-thinking-skill/
-├── SKILL.md       # Core skill file — AI agents read this
-├── README.md      # This file — usage and installation guide
-├── domains/       # Detailed domain content (loaded on-demand)
-└── LICENSE        # MIT License
-```
+| Category | Models |
+|----------|--------|
+| **Systems** | Feedback Loops, Emergence vs Reduction, Threshold Effect, Second-order Effects |
+| **Cognitive** | Confirmation Bias, Availability Heuristic, Narrative Fallacy, Dual Process Theory |
+| **Time** | Temporal Discounting, Path Dependence, Regression to the Mean |
+| **Structure** | Pareto Distribution, Local vs Global Optima, Evolvability vs Efficiency, Margin of Safety |
+
+Plus 6 combination patterns for using 2-3 models together.
+
+---
+
+## 6 Domain Tensions
+
+| Tension Pair | Core Contradiction |
+|-------------|-------------------|
+| Philosophy × Medicine | Free will vs biological determinism |
+| Evolution × Art | Survival fitness vs purposeless creation |
+| Mythology × Technology | Sacred meaning vs deconstructive reason |
+| Literature × Social Science | Narrative self vs statistical self |
+| History × Future Studies | Historical cycles vs accelerating mutation |
+| Philosophy × Natural Science | Ought vs is |
 
 ---
 
 ## Updating
 
-| Installation Method | Update Command |
-|--------------------|----------------|
-| `npx skills add` | `npx skills update infinite-gaming-studio/Gao-thinking-skill` |
-| Manual symlink / `git clone` | `cd Gao-thinking-skill && git pull` |
-| Manual copy | Re-clone with `git clone` |
+```bash
+cd Gao-thinking-skill && git pull
+```
 
-**Note:** After updating, you need to **restart your AI assistant** (new session loads the latest SKILL.md).
+After updating, restart your AI assistant to load the latest SKILL.md.
 
 ---
 
