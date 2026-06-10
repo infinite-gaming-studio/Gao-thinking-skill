@@ -1,6 +1,6 @@
 <div align="center">
 
-# 高氏思辨技能 (Gao's Thinking Skill)
+# 高思思辨技能 (Gao's Thinking Skill)
 
 > 思辨不是评判，是让思想的回声在五十面镜子之间来回折射。
 
@@ -19,7 +19,7 @@
 直接复制以下提示词给任何 AI 助手：
 
 ```
-请加载高氏思辨技能：从50个前沿领域（物理、宇宙、神经科学、
+请加载高思思辨技能：从50个前沿领域（物理、宇宙、神经科学、
 认知科学、进化论、心理学、行为经济学、社会学、中国哲学、存在主义、
 伦理学、文学理论、诗学、电影学、美术史、音乐、建筑、博弈论、系统论、
 神话学、符号学……）中选择5个与我最相关的领域，以散文笔法、
@@ -65,7 +65,7 @@ ln -s /absolute/path/to/Gao-thinking-skill ~/.opencode/skills/Gao-thinking-skill
 
 ```markdown
 ---
-description: 高氏思辨——从50个领域中选5个进行智识反刍
+description: 高思思辨——从50个领域中选5个进行智识反刍
 globs: *.md, *.txt
 ---
 
@@ -91,7 +91,7 @@ When user records a thought/behavior/reflection:
 在项目根目录创建 `.windsurfrules`：
 
 ```markdown
-当用户分享个人想法或行为记录时，启动高氏思辨技能。
+当用户分享个人想法或行为记录时，启动高思思辨技能。
 从50个知识领域中选择5个最相关的，以散文风格进行多角度思辨。
 引用经典必须融入行文，不标注出处。
 不评价、不肯定、不否定、不建议、不共情、不诊断。
@@ -133,7 +133,7 @@ apply the Gao Thinking Skill methodology:
 
 ```bash
 # 一次性使用
-aider --msg "请加载高氏思辨技能，从50个领域中选5个思辨以下内容：..."
+aider --msg "请加载高思思辨技能，从50个领域中选5个思辨以下内容：..."
 ```
 
 ---

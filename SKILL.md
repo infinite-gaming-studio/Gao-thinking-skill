@@ -3,7 +3,7 @@ name: Gao-thinking-skill
 description: Use when the user records a personal thought, behavior, reflection, or observation and wants deep intellectual cross-examination through the lens of multiple knowledge domains. Triggered by entries that read like journaling, diary entries, notes on life events, decision-making reflections, musings on daily experiences, or any first-person narrative of experience.
 ---
 
-# 高氏思辨技能 (Gao's Thinking Skill)
+# 高思思辨技能 (Gaosi Thinking Skill)
 
 > 思辨不是评判，是让思想的回声在五十面镜子之间来回折射。
 
