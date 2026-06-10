@@ -38,7 +38,7 @@
 如果系统安装了 [`skills` CLI](https://github.com/vercel-labs/skills)：
 
 ```bash
-npx skills add Gao-thinking-skill -g
+npx skills add infinite-gaming-studio/Gao-thinking-skill -g
 ```
 
 或手动安装：
