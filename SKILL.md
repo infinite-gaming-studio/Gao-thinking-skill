@@ -65,6 +65,30 @@ After the reflection is written, offer to export it.
 
 Read on-demand from `domains/`: `01-natural-science` (impermanence, adaptation), `02-medicine-health` (healing, trauma), `03-philosophy` (freedom, truth, consciousness), `04-social-science` (belonging, authority, irrationality), `05-history-civilization` (change, contingency), `06-literature-language` (story, alienation, metaphor), `07-art-aesthetics` (beauty, silence, imperfection), `08-technology-frontier` (cooperation, leverage, connection), `09-mythology-religion` (sacred, archetypes, meaning-making), `10-future-interdisciplinary` (surprise, acceleration, difference).
 
+## Theme Icon System
+
+When generating HTML output, match the watermark and decorative icons to the reflection's dominant domain. The template uses three placeholders:
+
+- `{{WATERMARK_ICON}}` — massive background watermark (upper-right)
+- `{{WATERMARK_SECONDARY}}` — smaller background watermark (bottom-left)
+- `{{DECORATIVE_ICON}}` — ornament used in title, separator, blockquote, pull quote, footer
+
+| Domain | Main Icon | Unicode | Secondary (fallback) | Meaning |
+|--------|-----------|---------|----------------------|---------|
+| General (default) | ❦ | U+2766 | 思 | Floral heart — significance blooming |
+| Physics | ∞ | U+221E | 思 | Infinity — endless recursion |
+| Biology | ✤ | U+2724 | 思 | Four petals — life's patterns |
+| Literature | ❧ | U+2767 | 思 | Rotated heart — story's turn |
+| Music | ♪ | U+266A | 思 | Note — a single pitch |
+| Art | ◇ | U+25C7 | 思 | Diamond — pure form |
+| History | ✦ | U+2726 | 思 | Star — marking time |
+| Business | ⊕ | U+2295 | 思 | Exchange — value circulating |
+| Technology | ⌘ | U+2318 | 思 | Command — tool of thought |
+| Psychology | ☯ | U+262F | 思 | Yin yang — mirror of self |
+| Spirituality | ✧ | U+2727 | 思 | Light star — beyond knowing |
+
+**Selection rule**: If the reflection spans multiple domains, use the dominant domain's icon for `WATERMARK_ICON`. Set `WATERMARK_SECONDARY` to the second-most-relevant domain's icon, or default to "思". `DECORATIVE_ICON` matches `WATERMARK_ICON` unless the reflection calls for a lighter touch.
+
 ## Common Mistakes
 
 | Mistake | Correction |

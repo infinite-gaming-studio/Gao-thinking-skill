@@ -7,9 +7,7 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html {
-    background: #f0ebe3;
-  }
+  html { background: #f0ebe3; }
 
   body {
     position: relative;
@@ -32,7 +30,7 @@
     min-height: calc(100vh - 4rem);
   }
 
-  /* === Watermark System — huge, faint, literary symbols === */
+  /* === Watermark System — theme-matched, huge, faint === */
   .watermark {
     position: fixed;
     pointer-events: none;
@@ -42,7 +40,7 @@
     font-weight: 300;
   }
 
-  .watermark--heart {
+  .watermark--main {
     font-size: min(85vw, 65rem);
     color: #c8bfb0;
     opacity: 0.04;
@@ -52,7 +50,7 @@
     font-family: "Georgia", "Times New Roman", serif;
   }
 
-  .watermark--thought {
+  .watermark--secondary {
     font-size: min(22vw, 16rem);
     color: #ddd6c8;
     opacity: 0.035;
@@ -85,12 +83,9 @@
   }
 
   /* === Content layer — above watermarks === */
-  .content {
-    position: relative;
-    z-index: 1;
-  }
+  .content { position: relative; z-index: 1; }
 
-  /* === Title Block — thin, centered, breathing === */
+  /* === Title Block === */
   .title-block {
     text-align: center;
     margin-bottom: 3rem;
@@ -130,38 +125,32 @@
     margin-top: 0.6rem;
   }
 
-  /* === Separator — ornamented breath === */
+  /* === Separator — ornament between thin rules === */
   .separator {
-    text-align: center;
-    margin: 2.5rem 0;
-    color: #d5cdbf;
-    font-size: 0.55rem;
-    letter-spacing: 1em;
-    user-select: none;
-    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+    margin: 2.5rem 0;
+    color: #d5cdbf;
+    user-select: none;
   }
 
-  .separator::before,
-  .separator::after {
-    content: "";
+  .sep-line {
     flex: 1;
     height: 1px;
     background: #e0d9cd;
     max-width: 3rem;
   }
 
-  .separator .orn {
+  .sep-orn {
     color: #d0c8b8;
     font-size: 0.45rem;
     letter-spacing: 0;
-    display: inline-block;
+    line-height: 1;
   }
 
-  /* === Section Headings — quiet, ornamental === */
+  /* === Section Headings === */
   h2 {
     font-weight: 320;
     font-size: 1.05rem;
@@ -191,7 +180,7 @@
     margin-bottom: 0.7rem;
   }
 
-  /* === Body text — flowing, unhurried === */
+  /* === Body text === */
   p {
     margin: 1rem 0;
     text-align: justify;
@@ -199,10 +188,8 @@
     hanging-punctuation: first;
   }
 
-  /* === First paragraph drop cap — only if requested === */
-  .drop-cap {
-    margin-top: 1.5rem;
-  }
+  /* === Drop cap (first paragraph) === */
+  .drop-cap { margin-top: 1.5rem; }
   .drop-cap::first-letter {
     font-size: 3.2em;
     float: left;
@@ -215,7 +202,7 @@
     letter-spacing: -0.02em;
   }
 
-  /* === Inline ornament (for section ends) === */
+  /* === End ornament after content === */
   .end-ornament {
     text-align: center;
     color: #d5cdbf;
@@ -225,86 +212,60 @@
     font-weight: 300;
   }
 
-  /* === Blockquote — set apart with decorative corner brackets === */
-  blockquote {
+  /* === Blockquote — with decorative corner icons === */
+  .bq-frame {
+    position: relative;
     margin: 2.5rem 0;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     color: #5a4f40;
     font-style: italic;
     font-weight: 330;
-    position: relative;
     border-left: 1px solid #e0d9cd;
     border-right: 1px solid #e0d9cd;
   }
 
-  blockquote::before {
-    content: "\201C";
+  .bq-frame p { margin: 0; }
+
+  .bq-icon {
     position: absolute;
-    left: 0.3rem;
-    top: -0.3rem;
-    font-size: 2.2rem;
+    font-size: 0.6rem;
     color: #d5cdbf;
-    font-family: "Georgia", serif;
     line-height: 1;
-    font-weight: 300;
+    pointer-events: none;
   }
 
-  blockquote::after {
-    content: "\201D";
-    position: absolute;
-    right: 0.3rem;
-    bottom: -0.6rem;
-    font-size: 2.2rem;
-    color: #d5cdbf;
-    font-family: "Georgia", serif;
-    line-height: 1;
-    font-weight: 300;
-  }
+  .bq-icon--tl { left: 0.3rem; top: -0.3rem; }
+  .bq-icon--br { right: 0.3rem; bottom: -0.3rem; transform: scaleY(-1); }
 
-  blockquote p { margin: 0; }
-
-  /* === Pull Quote — floating, framed by ornaments === */
+  /* === Pull Quote — floating, framed by icons === */
   .pull-quote {
+    position: relative;
     font-size: 1rem;
     color: #4a3f32;
     text-align: center;
     margin: 3rem 0;
-    padding: 1.5rem 2rem;
+    padding: 1.8rem 2rem 1.5rem;
     line-height: 2.1;
     font-weight: 300;
     font-style: italic;
-    position: relative;
-  }
-
-  .pull-quote::before {
-    content: "\2766";
-    font-size: 0.6rem;
-    color: #d5cdbf;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: 0;
-  }
-
-  .pull-quote::after {
-    content: "\2766";
-    font-size: 0.6rem;
-    color: #d5cdbf;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%) scaleY(-1);
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: 0;
   }
 
   .pull-quote p { margin: 0; }
 
-  /* === Domain Tag — contextual marker, not label === */
+  .pq-icon {
+    position: absolute;
+    left: 50%;
+    font-size: 0.6rem;
+    color: #d5cdbf;
+    line-height: 1;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .pq-icon--top { top: 0; }
+  .pq-icon--bottom { bottom: 0; transform: translateX(-50%) scaleY(-1); }
+
+  /* === Domain Tag === */
   .domain-marker {
     color: #a89f8e;
     font-size: 0.68rem;
@@ -322,18 +283,17 @@
     content: "\2014 ";
   }
 
-  /* === Decorative Page Rule (for manual use between sections) === */
+  /* === Decorative Page Rule (between sections) === */
   .section-rule {
+    position: relative;
     border: none;
     height: 1px;
     background: linear-gradient(to right, transparent, #e0d9cd 30%, #e0d9cd 70%, transparent);
     margin: 3rem auto;
     width: 60%;
-    position: relative;
   }
 
-  .section-rule::after {
-    content: "\2766";
+  .section-rule .srule-icon {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -356,12 +316,10 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-weight: 400;
     letter-spacing: 0.08em;
-    border-top: none;
     position: relative;
   }
 
-  footer::before {
-    content: "\2766";
+  .footer-icon {
     display: block;
     font-size: 0.5rem;
     color: #d0c8b8;
@@ -379,26 +337,16 @@
     margin: 1rem auto 0;
   }
 
-  /* === Thin Rule (minimal, no ornament) === */
-  .thin-rule {
-    border: none;
-    height: 1px;
-    background: #e8e2d8;
-    margin: 2.5rem 0;
-  }
-
   /* === Responsive === */
   @media (max-width: 680px) {
     body { margin: 0; padding: 2.5rem 1.5rem; line-height: 2; font-size: 0.95rem; min-height: auto; box-shadow: none; }
     h1 { font-size: 1.3rem; letter-spacing: 0.06em; }
     h2 { font-size: 1rem; margin-top: 2.5rem; }
     .drop-cap::first-letter { font-size: 2.6em; }
-    blockquote { padding: 0.6rem 1.2rem; border-left-width: 1px; border-right-width: 1px; }
-    blockquote::before { font-size: 1.6rem; left: 0.2rem; }
-    blockquote::after { font-size: 1.6rem; right: 0.2rem; }
-    .pull-quote { padding: 1.2rem 0.8rem; font-size: 0.95rem; margin: 2rem 0; }
-    .watermark--heart { font-size: min(120vw, 40rem); top: -3%; right: -25%; }
-    .watermark--thought { font-size: min(30vw, 12rem); }
+    .bq-frame { padding: 0.8rem 1.2rem; }
+    .pull-quote { padding: 1.5rem 0.8rem 1.2rem; font-size: 0.95rem; margin: 2rem 0; }
+    .watermark--main { font-size: min(120vw, 40rem); top: -3%; right: -25%; }
+    .watermark--secondary { font-size: min(30vw, 12rem); }
     .watermark--dot { display: none; }
     .watermark--dot-left { display: none; }
     .section-rule { width: 80%; }
@@ -406,41 +354,53 @@
 
   @media (max-width: 400px) {
     body { padding: 1.5rem 1rem; font-size: 0.9rem; }
-    .watermark--heart { opacity: 0.025; }
+    .watermark--main { opacity: 0.025; }
   }
 
   /* === Print === */
   @media print {
     body { background: white; color: black; max-width: none; padding: 1in; margin: 0; box-shadow: none; min-height: auto; }
     .watermark { display: none; }
+    .section-rule .srule-icon { background: white; }
     footer { display: none; }
-    .section-rule::after { background: white; }
   }
 </style>
 </head>
 <body>
 
-<div class="watermark watermark--heart" aria-hidden="true">❦</div>
-<div class="watermark watermark--thought" aria-hidden="true">思</div>
+<!--
+  Watermark icons are theme-matched.
+  {{WATERMARK_ICON}} and {{WATERMARK_SECONDARY}} are chosen
+  based on the dominant domain of the reflection.
+  See SKILL.md -> Theme Icon System for the mapping.
+-->
+<div class="watermark watermark--main" aria-hidden="true">{{WATERMARK_ICON}}</div>
+<div class="watermark watermark--secondary" aria-hidden="true">{{WATERMARK_SECONDARY}}</div>
 <div class="watermark watermark--dot" aria-hidden="true">· · · · · ·</div>
 <div class="watermark watermark--dot-left" aria-hidden="true">· · · · ·</div>
 
 <div class="content">
 
 <div class="title-block">
-  <span class="title-ornament">❦</span>
+  <span class="title-ornament" aria-hidden="true">{{DECORATIVE_ICON}}</span>
   <div class="title-rule"></div>
   <h1>{{TITLE}}</h1>
   <p class="meta">{{DATE}}</p>
 </div>
 
 {{#HAS_BLOCKQUOTE}}
-<blockquote>
-<p>{{USER_QUOTE}}</p>
-</blockquote>
+<div class="bq-frame">
+  <span class="bq-icon bq-icon--tl" aria-hidden="true">{{DECORATIVE_ICON}}</span>
+  <span class="bq-icon bq-icon--br" aria-hidden="true">{{DECORATIVE_ICON}}</span>
+  <p>{{USER_QUOTE}}</p>
+</div>
 {{/HAS_BLOCKQUOTE}}
 
-<div class="separator"><span class="orn">❦</span></div>
+<div class="separator">
+  <span class="sep-line"></span>
+  <span class="sep-orn" aria-hidden="true">{{DECORATIVE_ICON}}</span>
+  <span class="sep-line"></span>
+</div>
 
 {{#DROP_CAP_FIRST}}
 <div class="drop-cap">
@@ -452,9 +412,12 @@
 </div>
 {{/DROP_CAP_FIRST}}
 
-<div class="end-ornament">❦</div>
+<div class="end-ornament" aria-hidden="true">{{DECORATIVE_ICON}}</div>
 
-<footer>高 思</footer>
+<footer>
+  <span class="footer-icon" aria-hidden="true">{{DECORATIVE_ICON}}</span>
+  高 思
+</footer>
 
 </div>
 
